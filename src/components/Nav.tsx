@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -25,13 +24,12 @@ export function Nav() {
     <nav style={{ backgroundColor: "var(--water-dark)" }} className="sticky top-0 z-50 shadow-md">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          <Image
-            src="/images/logo.jpeg"
+          <img
+            src="/images/logo.svg"
             alt="Synergia Ranch Agroecology"
-            width={36}
-            height={36}
-            className="rounded-full object-cover"
-            style={{ filter: "invert(1) brightness(1.8)" }}
+            width={44}
+            height={16}
+            style={{ filter: "brightness(0) invert(1)", height: "32px", width: "auto" }}
           />
           <span className="text-white font-semibold text-sm tracking-wide leading-tight">
             Synergy 2026
