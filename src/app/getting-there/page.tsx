@@ -21,9 +21,6 @@ export default function GettingTherePage() {
         <div className="text-2xl">📍</div>
         <div>
           <p className="font-semibold mb-1">Synergia Ranch</p>
-          <p className="text-sm opacity-70 mb-3">
-            SunSpace Ranch Road, Tucson, AZ 85736
-          </p>
           <a
             href="https://maps.app.goo.gl/ZmR5vg25fjRade64A"
             target="_blank"
@@ -54,9 +51,8 @@ export default function GettingTherePage() {
         <section>
           <h2 className="text-lg font-semibold mb-3">By Air</h2>
           <p className="opacity-70 leading-relaxed">
-            The nearest major airport is <strong>Tucson International Airport (TUS)</strong>,
-            approximately 30 minutes from the ranch. Phoenix Sky Harbor (PHX) is also a viable
-            option, approximately 2 hours by car.
+            Nearest airport information will be added here. Use the Google Maps link above
+            to confirm the closest airports to Synergia Ranch.
           </p>
         </section>
 

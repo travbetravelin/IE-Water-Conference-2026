@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "How do I get to Synergia Ranch?",
-    a: "The nearest major airport is Tucson International (TUS), about 30 minutes away. Carpooling is encouraged. See the Getting There page for directions and travel details.",
+    a: "See the Getting There page for directions, the Google Maps link to the ranch, and carpool coordination details.",
   },
   {
     q: "When is the deadline to register?",
