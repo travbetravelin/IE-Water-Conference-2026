@@ -19,10 +19,10 @@ export default function Home() {
             July 17–19, 2026 · Synergia Ranch
           </p>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
-            Synergy 2026
+            Water, Wind and Wisdom
           </h1>
           <p style={{ color: "var(--sand)" }} className="text-xl md:text-2xl font-light mb-2 drop-shadow">
-            Water, Wind and Wisdom
+            2026 Synergia Ranch Conference
           </p>
           <p className="text-base md:text-lg opacity-75 max-w-xl mx-auto mt-4 mb-10">
             Inspiring regenerative solutions to desertification — bringing together
