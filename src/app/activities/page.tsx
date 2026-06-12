@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Activities — Synergy 2026",
@@ -62,6 +63,20 @@ export default function ActivitiesPage() {
       <p className="text-sm opacity-40 italic mb-10">
         Final activity schedule will be confirmed closer to the event.
       </p>
+
+      {/* Arroyo restoration photo */}
+      <div className="relative w-full rounded-2xl overflow-hidden shadow-md mb-10" style={{ height: "280px" }}>
+        <Image
+          src="/images/arroyo.jpg"
+          alt="Aerial view of restoration work in the arroyo at Synergia Ranch"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute bottom-0 left-0 right-0 px-5 py-3 text-white text-sm" style={{ background: "linear-gradient(transparent, rgba(0,0,0,0.6))" }}>
+          Restoration work in the arroyo at Synergia Ranch
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {activities.map((a) => (

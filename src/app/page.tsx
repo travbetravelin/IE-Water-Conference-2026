@@ -1,43 +1,48 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section
-        style={{ backgroundColor: "var(--water-dark)" }}
-        className="text-white py-24 px-4 text-center"
-      >
-        <p className="text-sm uppercase tracking-widest opacity-70 mb-3">
-          July 17–19, 2026 · Synergia Ranch
-        </p>
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-          Synergy 2026
-        </h1>
-        <p
-          style={{ color: "var(--sand)" }}
-          className="text-xl md:text-2xl font-light mb-2"
-        >
-          Water, Wind and Wisdom
-        </p>
-        <p className="text-base md:text-lg opacity-70 max-w-xl mx-auto mt-4 mb-10">
-          Inspiring regenerative solutions to desertification — bringing together
-          scientists, practitioners, artists, and communities.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/registration"
-            style={{ backgroundColor: "var(--clay)" }}
-            className="px-8 py-3 rounded font-semibold text-white hover:opacity-90 transition-opacity"
-          >
-            Register Now
-          </Link>
-          <Link
-            href="/schedule"
-            className="px-8 py-3 rounded font-semibold text-white border border-white/40 hover:bg-white/10 transition-colors"
-          >
-            View Schedule
-          </Link>
+      <section className="relative text-white" style={{ minHeight: "520px" }}>
+        <Image
+          src="/images/ranch-aerial.jpg"
+          alt="Aerial view of Synergia Ranch"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(20,45,60,0.65)" }} />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-28">
+          <p className="text-sm uppercase tracking-widest opacity-80 mb-3">
+            July 17–19, 2026 · Synergia Ranch
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
+            Synergy 2026
+          </h1>
+          <p style={{ color: "var(--sand)" }} className="text-xl md:text-2xl font-light mb-2 drop-shadow">
+            Water, Wind and Wisdom
+          </p>
+          <p className="text-base md:text-lg opacity-75 max-w-xl mx-auto mt-4 mb-10">
+            Inspiring regenerative solutions to desertification — bringing together
+            scientists, practitioners, artists, and communities.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/registration"
+              style={{ backgroundColor: "var(--clay)" }}
+              className="px-8 py-3 rounded font-semibold text-white hover:opacity-90 transition-opacity shadow-lg"
+            >
+              Register Now
+            </Link>
+            <Link
+              href="/schedule"
+              className="px-8 py-3 rounded font-semibold text-white border border-white/50 hover:bg-white/15 transition-colors"
+            >
+              View Schedule
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -82,8 +87,7 @@ export default function Home() {
               {
                 name: "Indra",
                 org: "",
-                title:
-                  "Indigenous decentralised water management and river revival",
+                title: "Indigenous decentralised water management and river revival",
                 day: "Saturday",
               },
               {
@@ -102,10 +106,7 @@ export default function Home() {
                 {k.org && <p className="text-sm opacity-60 mb-1">{k.org}</p>}
                 <p className="text-sm italic opacity-80">{k.title}</p>
                 <span
-                  style={{
-                    backgroundColor: "var(--water)",
-                    color: "white",
-                  }}
+                  style={{ backgroundColor: "var(--water)", color: "white" }}
                   className="inline-block mt-2 text-xs px-2 py-0.5 rounded"
                 >
                   {k.day}
@@ -125,7 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Activities teaser */}
+      {/* Activities teaser with arroyo photo */}
       <section style={{ backgroundColor: "var(--sand)" }} className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2
@@ -134,29 +135,65 @@ export default function Home() {
           >
             Activities
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
-            {[
-              { icon: "🌿", label: "Volunteer Field Work" },
-              { icon: "💃", label: "Dance & Movement" },
-              { icon: "🏛️", label: "Ranch Historical Tour" },
-              { icon: "🌊", label: "Arroyo & Orchard Walk" },
-            ].map((a) => (
-              <div
-                key={a.label}
-                className="bg-white rounded-lg p-5 shadow-sm"
-              >
-                <p className="text-3xl mb-2">{a.icon}</p>
-                <p className="font-medium">{a.label}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+            <div className="relative rounded-xl overflow-hidden shadow-md" style={{ height: "240px" }}>
+              <Image
+                src="/images/arroyo.jpg"
+                alt="Restoration work in the arroyo at Synergia Ranch"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4 text-center text-sm">
+              {[
+                { icon: "🌿", label: "Volunteer Field Work" },
+                { icon: "💃", label: "Dance & Movement" },
+                { icon: "🏛️", label: "Ranch Historical Tour" },
+                { icon: "🌊", label: "Arroyo & Orchard Walk" },
+              ].map((a) => (
+                <div key={a.label} className="bg-white rounded-lg p-5 shadow-sm">
+                  <p className="text-3xl mb-2">{a.icon}</p>
+                  <p className="font-medium">{a.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="text-center mt-8">
+          <div className="text-center">
             <Link
               href="/activities"
               style={{ color: "var(--water)" }}
               className="text-sm font-medium underline underline-offset-2 hover:opacity-70"
             >
               Learn more about activities →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Flyer */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2
+            style={{ color: "var(--water-dark)" }}
+            className="text-2xl font-bold mb-8 text-center"
+          >
+            Conference Flyer
+          </h2>
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "1.41 / 1" }}>
+            <Image
+              src="/images/conference-flyer.jpg"
+              alt="Synergy 2026 Conference Flyer"
+              fill
+              className="object-contain bg-white"
+            />
+          </div>
+          <div className="text-center mt-6">
+            <Link
+              href="/registration"
+              style={{ backgroundColor: "var(--clay)" }}
+              className="inline-block px-8 py-3 rounded font-semibold text-white hover:opacity-90 transition-opacity"
+            >
+              Register Now
             </Link>
           </div>
         </div>

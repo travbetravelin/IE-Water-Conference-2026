@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Getting There — Synergy 2026",
@@ -34,6 +35,19 @@ export default function GettingTherePage() {
           </a>
         </div>
       </div>
+
+      {/* Site map */}
+      <section className="mb-8">
+        <h2 className="text-lg font-semibold mb-3">Ranch Map</h2>
+        <div className="relative w-full rounded-xl overflow-hidden shadow-md border border-black/5" style={{ aspectRatio: "4/3" }}>
+          <Image
+            src="/images/sitemap.png"
+            alt="Synergia Ranch site map"
+            fill
+            className="object-contain bg-white"
+          />
+        </div>
+      </section>
 
       {/* Travel sections */}
       <div className="space-y-8 text-sm">
