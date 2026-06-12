@@ -6,7 +6,7 @@ export function Footer() {
           <p className="font-semibold text-white mb-1">Synergy 2026</p>
           <p className="opacity-70">Water, Wind and Wisdom</p>
           <p className="opacity-70">July 17–19, 2026</p>
-          <p className="opacity-70">Synergia Ranch</p>
+          <p className="opacity-70">Synergia Ranch · Santa Fe, NM</p>
         </div>
         <div>
           <p className="font-semibold text-white mb-2">Quick Links</p>

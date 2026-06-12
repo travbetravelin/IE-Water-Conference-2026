@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "How do I get to Synergia Ranch?",
-    a: "See the Getting There page for directions, the Google Maps link to the ranch, and carpool coordination details.",
+    a: "Synergia Ranch is located at 26 Synergia Rd, Santa Fe, NM 87508. The nearest major airport is Albuquerque International Sunport (ABQ), about an hour away. Santa Fe Regional Airport (SAF) is closer but serves limited routes. See the Getting There page for full directions and carpool details.",
   },
   {
     q: "When is the deadline to register?",

@@ -21,6 +21,7 @@ export default function GettingTherePage() {
         <div className="text-2xl">📍</div>
         <div>
           <p className="font-semibold mb-1">Synergia Ranch</p>
+          <p className="text-sm opacity-70 mb-3">26 Synergia Rd, Santa Fe, NM 87508</p>
           <a
             href="https://maps.app.goo.gl/ZmR5vg25fjRade64A"
             target="_blank"
@@ -51,8 +52,10 @@ export default function GettingTherePage() {
         <section>
           <h2 className="text-lg font-semibold mb-3">By Air</h2>
           <p className="opacity-70 leading-relaxed">
-            Nearest airport information will be added here. Use the Google Maps link above
-            to confirm the closest airports to Synergia Ranch.
+            The nearest major airport is <strong>Albuquerque International Sunport (ABQ)</strong>,
+            approximately 60 miles from the ranch (about 1 hour by car). <strong>Santa Fe Regional
+            Airport (SAF)</strong> is closer but serves limited routes. Most attendees will fly
+            into ABQ.
           </p>
         </section>
 
