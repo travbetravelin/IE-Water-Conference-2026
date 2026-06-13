@@ -27,13 +27,8 @@ export function Nav() {
           <img
             src="/images/logo.svg"
             alt="Synergia Ranch Agroecology"
-            width={44}
-            height={16}
             style={{ filter: "brightness(0) invert(1)", height: "32px", width: "auto" }}
           />
-          <span className="text-white font-semibold text-sm tracking-wide leading-tight">
-            Synergy 2026
-          </span>
         </Link>
 
         {/* Desktop */}

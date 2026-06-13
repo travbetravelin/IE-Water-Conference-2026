@@ -15,18 +15,14 @@ export default function Home() {
         />
         <div className="absolute inset-0" style={{ backgroundColor: "rgba(20,45,60,0.65)" }} />
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-28">
-          <p className="text-sm uppercase tracking-widest opacity-80 mb-3">
-            July 17–19, 2026 · Synergia Ranch
-          </p>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
             Water, Wind and Wisdom
           </h1>
           <p style={{ color: "var(--sand)" }} className="text-xl md:text-2xl font-light mb-2 drop-shadow">
             2026 Synergia Ranch Conference
           </p>
-          <p className="text-base md:text-lg opacity-75 max-w-xl mx-auto mt-4 mb-10">
-            Inspiring regenerative solutions to desertification — bringing together
-            scientists, practitioners, artists, and communities.
+          <p className="text-sm uppercase tracking-widest opacity-70 mt-2 mb-10">
+            July 17–19, 2026 · Santa Fe, NM
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -46,14 +42,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Theme */}
+      {/* About */}
       <section style={{ backgroundColor: "var(--sand)" }} className="py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 style={{ color: "var(--water-dark)" }} className="text-2xl font-bold mb-4">
             About the Conference
           </h2>
           <p className="text-base leading-relaxed opacity-80">
-            Synergy 2026 convenes at the historic Synergia Ranch to address one of the defining
+            Convening at the historic Synergia Ranch to address one of the defining
             challenges of our time: desertification. Over three days, speakers, practitioners, and
             participants from across disciplines will share knowledge, demonstrate techniques, and
             build lasting connections around regenerative land and water stewardship.
@@ -150,6 +146,7 @@ export default function Home() {
                 { icon: "💃", label: "Dance & Movement" },
                 { icon: "🏛️", label: "Ranch Historical Tour" },
                 { icon: "🌊", label: "Arroyo & Orchard Walk" },
+                { icon: "🔨", label: "Hands-on Workshops" },
               ].map((a) => (
                 <div key={a.label} className="bg-white rounded-lg p-5 shadow-sm">
                   <p className="text-3xl mb-2">{a.icon}</p>
@@ -172,29 +169,21 @@ export default function Home() {
 
       {/* Flyer */}
       <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           <h2
             style={{ color: "var(--water-dark)" }}
             className="text-2xl font-bold mb-8 text-center"
           >
             Conference Flyer
           </h2>
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-xl" style={{ aspectRatio: "1.41 / 1" }}>
+          <div className="rounded-xl overflow-hidden shadow-xl">
             <Image
               src="/images/conference-flyer.jpg"
               alt="Synergy 2026 Conference Flyer"
-              fill
-              className="object-contain bg-white"
+              width={676}
+              height={954}
+              className="w-full h-auto"
             />
-          </div>
-          <div className="text-center mt-6">
-            <Link
-              href="/registration"
-              style={{ backgroundColor: "var(--clay)" }}
-              className="inline-block px-8 py-3 rounded font-semibold text-white hover:opacity-90 transition-opacity"
-            >
-              Register Now
-            </Link>
           </div>
         </div>
       </section>
