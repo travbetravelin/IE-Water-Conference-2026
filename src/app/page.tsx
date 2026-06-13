@@ -51,8 +51,9 @@ export default function Home() {
           <p className="text-base leading-relaxed opacity-80">
             Convening at the historic Synergia Ranch to address one of the defining
             challenges of our time: desertification. Over three days, speakers, practitioners, and
-            participants from across disciplines will share knowledge, demonstrate techniques, and
-            build lasting connections around regenerative land and water stewardship.
+            participants from across disciplines will share knowledge, demonstrate techniques,
+            participate in hands on workshops and build lasting connections around regenerative
+            land and water stewardship.
           </p>
         </div>
       </section>
@@ -146,7 +147,6 @@ export default function Home() {
                 { icon: "💃", label: "Dance & Movement" },
                 { icon: "🏛️", label: "Ranch Historical Tour" },
                 { icon: "🌊", label: "Arroyo & Orchard Walk" },
-                { icon: "🔨", label: "Hands-on Workshops" },
               ].map((a) => (
                 <div key={a.label} className="bg-white rounded-lg p-5 shadow-sm">
                   <p className="text-3xl mb-2">{a.icon}</p>
