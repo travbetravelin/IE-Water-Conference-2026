@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Synergy 2026 — Water, Wind and Wisdom",
+  title: "2026 Synergia Ranch Conference: Water, Wind and Wisdom",
   description:
     "An international conference on regenerative solutions to desertification. July 17–19, 2026 at Synergia Ranch.",
 };
