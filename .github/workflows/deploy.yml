@@ -1,4 +1,4 @@
-name: Production Deployment
+name: Production CI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy-production:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,13 +30,3 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_APP_ENV: production
-
-      - name: Deploy to Vercel (production)
-        run: |
-          npm install -g vercel
-          vercel --token ${{ secrets.VERCEL_TOKEN }} \
-            --scope ${{ secrets.VERCEL_ORG_ID }} \
-            --prod --yes
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
