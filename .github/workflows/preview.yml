@@ -39,6 +39,7 @@ jobs:
             --scope ${{ secrets.VERCEL_ORG_ID }} \
             --yes 2>&1 | tail -1)
           echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
+          echo "Preview URL: $DEPLOY_URL"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
