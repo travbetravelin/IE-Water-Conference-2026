@@ -23,14 +23,15 @@ export function Nav() {
 
   return (
     <nav style={{ backgroundColor: "var(--water-dark)" }} className="sticky top-0 z-50 shadow-md">
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16 lg:h-20">
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <Image
             src="/images/logo.svg"
             alt="Synergia Ranch Agroecology"
-            width={120}
-            height={32}
+            width={200}
+            height={56}
             style={{ filter: "brightness(0) invert(1)", height: "32px", width: "auto" }}
+            className="lg:!h-14"
           />
         </Link>
 
