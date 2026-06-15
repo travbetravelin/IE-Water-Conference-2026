@@ -35,8 +35,8 @@ jobs:
         id: vercel
         run: |
           npm install -g vercel
-          DEPLOY_URL=$(vercel deploy --archive=tgz \
-            --token ${{ secrets.VERCEL_TOKEN }} \
+          DEPLOY_URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} \
+            --scope ${{ secrets.VERCEL_ORG_ID }} \
             --yes 2>&1 | tail -1)
           echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
         env:
