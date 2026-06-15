@@ -50,7 +50,7 @@ const schedule: Day[] = [
         type: "breakout",
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
-          "Dance and Movement — Kristin Swiat",
+          "Movement and Metaphor, Body as Earth — Kristin Swiat",
           "Biochar — James Skeet, Spirit Farm",
         ],
       },
@@ -67,7 +67,7 @@ const schedule: Day[] = [
     date: "July 18 — Day 2",
     sessions: [
       { time: "10:00–10:45 am", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra", type: "keynote" },
-      { time: "11:00–11:45 am", title: "Presentation", speaker: "James Skeet — Dance Studio" },
+      { time: "11:00 am–12:00 pm", title: "Presentation", speaker: "James Skeet — Dance Studio" },
       { time: "12:00–12:30 pm", title: "Break" },
       { time: "12:30–1:30 pm", title: "Lunch", type: "meal" },
       { time: "1:30–2:30 pm", title: "Presentation", speaker: "Zack Withers" },
@@ -78,7 +78,7 @@ const schedule: Day[] = [
         type: "breakout",
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
-          "Dance and Movement — Kristin Swiat",
+          "Movement and Metaphor, Body as Earth — Kristin Swiat",
           "Water, Information and Maps — Simtable",
         ],
       },
@@ -107,7 +107,7 @@ const schedule: Day[] = [
         title: "Breakout Sessions",
         type: "breakout",
         breakoutOptions: [
-          "Dance and Movement — Kristin Swiat",
+          "Movement and Metaphor, Body as Earth — Kristin Swiat",
           "Building Erosion Control Structures — Jan-Willem Jansens",
           "Composting Ceremony Preparation — James Skeet",
         ],
