@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Schedule — 2026 Synergia Ranch Conference",
@@ -210,7 +211,13 @@ export default function SchedulePage() {
                             <li key={opt} className="text-xs flex gap-1.5 items-baseline">
                               <span className="opacity-40 shrink-0">→</span>
                               <span>
-                                <strong>{session}</strong>
+                                {session === "Movement and Metaphor, Body as Earth" ? (
+                                  <Link href="/activities#movement" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+                                    <strong>{session}</strong>
+                                  </Link>
+                                ) : (
+                                  <strong>{session}</strong>
+                                )}
                                 {leader && <span className="opacity-60"> — {leader}</span>}
                               </span>
                             </li>

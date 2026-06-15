@@ -15,7 +15,7 @@ const activities = [
   },
   {
     icon: "💃",
-    title: "Dance & Movement Sessions",
+    title: "Movement and Metaphor, Body as Earth",
     lead: "Krisha",
     description:
       "Embodied movement sessions exploring the relationship between body, land, and water. Open to all experience levels.",
@@ -82,6 +82,7 @@ export default function ActivitiesPage() {
         {activities.map((a) => (
           <div
             key={a.title}
+            id={a.title === "Movement and Metaphor, Body as Earth" ? "movement" : undefined}
             className="bg-white rounded-xl p-6 border border-black/5 shadow-sm"
           >
             <p className="text-3xl mb-3">{a.icon}</p>
