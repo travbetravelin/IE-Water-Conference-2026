@@ -26,18 +26,18 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build
-        run: npm run build
+      - name: Build for Vercel
+        run: npx vercel build --token ${{ secrets.VERCEL_TOKEN }} --yes
         env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           NEXT_PUBLIC_APP_ENV: staging
 
       - name: Deploy to Vercel (preview)
         id: vercel
         run: |
-          npm install -g vercel
-          DEPLOY_URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} \
-            --scope ${{ secrets.VERCEL_ORG_ID }} \
-            --yes --no-wait 2>&1 | tail -1)
+          DEPLOY_URL=$(npx vercel deploy --prebuilt \
+            --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | tail -1)
           echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
