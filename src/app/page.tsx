@@ -16,7 +16,7 @@ export default function Home() {
         <div className="absolute inset-0" style={{ backgroundColor: "rgba(20,45,60,0.65)" }} />
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-28">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
-            Water. Wind. Wisdom.
+            Water | Wind | Wisdom
           </h1>
           <p className="text-lg md:text-xl font-light mb-3 drop-shadow italic">
             Inspiring Regenerative Solutions to Desertification
