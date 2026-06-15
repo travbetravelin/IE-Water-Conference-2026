@@ -31,21 +31,17 @@ jobs:
         env:
           NEXT_PUBLIC_APP_ENV: staging
 
-      # Vercel CLI deploys to preview and posts the URL as a PR comment.
       - name: Deploy to Vercel (preview)
         id: vercel
         run: |
           npm install -g vercel
-          DEPLOY_URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} \
-            --scope ${{ secrets.VERCEL_ORG_ID }} \
+          DEPLOY_URL=$(vercel deploy --archive=tgz \
+            --token ${{ secrets.VERCEL_TOKEN }} \
             --yes 2>&1 | tail -1)
           echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_GIT_COMMIT_AUTHOR_LOGIN: travbetravelin
-          VERCEL_GIT_COMMIT_AUTHOR_NAME: travbetravelin
-          VERCEL_GIT_COMMIT_AUTHOR_EMAIL: travis.wilsonj@gmail.com
 
       - name: Comment preview URL on PR
         if: github.event_name == 'pull_request'
