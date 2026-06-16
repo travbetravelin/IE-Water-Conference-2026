@@ -33,6 +33,13 @@ const speakers: Speaker[] = [
     talkTitle: "Spirit Farm Keynote",
   },
   {
+    name: "Mark Nelson",
+    id: "mark-nelson",
+    talkTitle: "Our shared challenge is to intelligently restore the health of our global biosphere, acting with urgency as if our lives depend on it, which they do",
+    bio: "Dr. Mark Nelson, Chairman emeritus of Institute of Ecotechnics (www.ecotechnics.edu), Director, Wastewater Gardens International (www.wastewatergardens.com), works in closed ecological systems, ecological engineering, restoration of damaged ecosystems, and ecological wastewater recycling. Mark served in the \"biospherian\" crew for Biosphere 2's closure experiment, 1991-1993. Books include \"Pushing Our Limits: Insights from Biosphere 2\" (2018), \"The Wastewater Gardener: Preserving the Planet One Flush at a Time\" (2014) and \"Life Under Glass: Crucial Lessons in Planetary Stewardship\" (2020). Wastewater Gardens were implemented in 14 countries, current project: Eden In Iraq for 10,000 Marsh Arabs (www.edeniniraq.com). BA Dartmouth College, MS University of Arizona, PhD University of Florida.",
+    image: "/images/mark-nelson.jpg",
+  },
+  {
     name: "Indra Shekhar Singh",
     id: "indra-shekhar-singh",
     talkTitle: "Indigenous Decentralised Water Management and River Revival",
