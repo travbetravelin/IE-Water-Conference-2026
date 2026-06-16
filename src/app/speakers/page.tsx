@@ -28,13 +28,17 @@ const speakers: Speaker[] = [
   },
   {
     name: "Joyce Skeet",
+    id: "joyce-skeet",
     role: "Spirit Farm",
-    talkTitle: "On Churros and on Herbs",
+    talkTitle: "Wild Plants, Herbs and Churro Sheep",
+    talkAbstract: "Explore the realm of plants, their energy and medicine. Dive into some herbal formulas using local plants that benefit our well-being. Then take a journey several hundred years ago to immerse ourselves with the Landrace Churro Sheep, exploring the incredible traits they carry with them into the current century.",
   },
   {
     name: "James Skeet",
+    id: "james-skeet",
     role: "Spirit Farm",
-    talkTitle: "Spirit Farm Keynote",
+    talkTitle: "Bio Cosmology and the Use of Biochar",
+    talkAbstract: "Changing our paradigms to become more indigenous by weaving insights from 40,000 years of ancestral knowledge that connects the heart and soul to the earth that escorts us into a new awareness of agriculture. Examine Indigenous farming and biochar perspectives that regenerate the land and food systems so that soil health, environmental health and human health can prosper.",
   },
   {
     name: "Mark Nelson",
