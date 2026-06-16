@@ -12,15 +12,19 @@ type Speaker = {
   talkTitle?: string;
   talkAbstract?: string;
   image?: string;
+  imagePosition?: string;
 };
 
 const speakers: Speaker[] = [
   {
     name: "Jan-Willem Jansens",
+    id: "jan-willem-jansens",
     role: "Ecotone Landscape Planning",
     talkTitle: "Crisis of our times, crisis of New Mexico",
     talkAbstract:
       "Inaugural keynote examining the interconnected crises of desertification, land degradation, and community resilience across New Mexico and the broader Southwest.",
+    image: "/images/jan-willem-jansens.JPG",
+    imagePosition: "top",
   },
   {
     name: "Joyce Skeet",
@@ -46,6 +50,7 @@ const speakers: Speaker[] = [
     talkAbstract:
       "This talk will about ways to survive using indigenous water wisdom and community science to revive rivers and construct water structures. During the talk we shall go over the principles which are universal and the talk will also tell the story of how communities using low tech nature based methods have gained water sovereignty and dignity.",
     image: "/images/indra-shekhar-singh.jpg",
+    imagePosition: "top",
   },
   {
     name: "Nino Saggio",
@@ -115,7 +120,12 @@ export default function SpeakersPage() {
             {s.image && (
               <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-black/10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={s.image} alt={s.name} className="object-cover w-full h-full" />
+                <img
+                  src={s.image}
+                  alt={s.name}
+                  className="object-cover w-full h-full"
+                  style={{ objectPosition: s.imagePosition ?? "center" }}
+                />
               </div>
             )}
             <h2 className="text-lg font-semibold mb-0.5">{s.name}</h2>

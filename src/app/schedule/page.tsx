@@ -120,8 +120,9 @@ const schedule: Day[] = [
       { time: "10:00–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
       { time: "11:00 am–12:00 pm", title: "Our shared challenge is to intelligently restore the health of our global biosphere, acting with urgency as if our lives depend on it, which they do", speaker: "Mark Nelson & Meridel Rubenstein", speakerUrl: "/speakers#mark-nelson", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:15–2:15 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", type: "keynote" },
-      { time: "2:15–2:45 pm", title: "Presentation TBD", speaker: "Amanda Bramble, Ampersand" },
+      { time: "1:15–1:45 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", type: "keynote" },
+      { time: "1:45–2:15 pm", title: "Presentation" },
+      { time: "2:15–2:45 pm", title: "Presentation" },
       {
         time: "3:00–5:00 pm",
         title: "Breakout Sessions",
