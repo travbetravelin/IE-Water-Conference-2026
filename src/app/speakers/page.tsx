@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Speakers — Synergy 2026",
@@ -107,15 +106,9 @@ export default function SpeakersPage() {
             className="bg-white rounded-xl p-6 shadow-sm border border-black/5"
           >
             {s.image && (
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-black/10 flex items-center justify-center">
-                <Image
-                  src={s.image}
-                  alt={s.name}
-                  width={96}
-                  height={96}
-                  className="object-cover w-full h-full"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                />
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-black/10">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.image} alt={s.name} className="object-cover w-full h-full" />
               </div>
             )}
             <h2 className="text-lg font-semibold mb-0.5">{s.name}</h2>
