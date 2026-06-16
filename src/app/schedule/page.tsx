@@ -9,6 +9,7 @@ type Session = {
   time: string;
   title: string;
   speaker?: string;
+  speakerUrl?: string;
   note?: string;
   type?: "keynote" | "breakout" | "social" | "ceremony" | "meal";
   breakoutOptions?: string[];
@@ -78,8 +79,7 @@ const schedule: Day[] = [
         ],
       },
       { time: "10:00–11:00 am", title: "Presentation", speaker: "James Skeet — Dance Studio" },
-      { time: "11:00–11:45 am", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra", type: "keynote" },
-      { time: "11:45 am–12:15 pm", title: "Break" },
+      { time: "11:00 am–12:00 pm", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra Shekhar Singh", speakerUrl: "/speakers#indra-shekhar-singh", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
       { time: "1:15–1:45 pm", title: "Presentation", speaker: "Zack Withers" },
       { time: "1:45–2:15 pm", title: "Presentation", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center" },
@@ -217,7 +217,13 @@ export default function SchedulePage() {
                       )}
                     </div>
                     {s.speaker && (
-                      <p className="text-xs opacity-60 mt-0.5">{s.speaker}</p>
+                      <p className="text-xs opacity-60 mt-0.5">
+                        {s.speakerUrl ? (
+                          <Link href={s.speakerUrl} style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+                            {s.speaker}
+                          </Link>
+                        ) : s.speaker}
+                      </p>
                     )}
                     {s.note && (
                       <p className="text-xs opacity-50 mt-1">{s.note}</p>

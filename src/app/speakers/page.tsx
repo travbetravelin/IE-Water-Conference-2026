@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Speakers — Synergy 2026",
@@ -6,10 +7,12 @@ export const metadata: Metadata = {
 
 type Speaker = {
   name: string;
+  id?: string;
   role?: string;
   bio?: string;
   talkTitle?: string;
   talkAbstract?: string;
+  image?: string;
 };
 
 const speakers: Speaker[] = [
@@ -31,10 +34,12 @@ const speakers: Speaker[] = [
     talkTitle: "Spirit Farm Keynote",
   },
   {
-    name: "Indra",
+    name: "Indra Shekhar Singh",
+    id: "indra-shekhar-singh",
     talkTitle: "Indigenous Decentralised Water Management and River Revival",
     talkAbstract:
-      "Ways to survive using indigenous water wisdom and community science to revive rivers and construct water structures. The talk covers universal principles and tells the story of how communities using low-tech, nature-based methods have gained water sovereignty and dignity.",
+      "This talk will about ways to survive using indigenous water wisdom and community science to revive rivers and construct water structures. During the talk we shall go over the principles which are universal and the talk will also tell the story of how communities using low tech nature based methods have gained water sovereignty and dignity.",
+    image: "/images/indra-shekhar-singh.jpg",
   },
   {
     name: "Nino Saggio",
@@ -98,8 +103,21 @@ export default function SpeakersPage() {
         {speakers.map((s) => (
           <div
             key={s.name}
+            id={s.id}
             className="bg-white rounded-xl p-6 shadow-sm border border-black/5"
           >
+            {s.image && (
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-black/10 flex items-center justify-center">
+                <Image
+                  src={s.image}
+                  alt={s.name}
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+              </div>
+            )}
             <h2 className="text-lg font-semibold mb-0.5">{s.name}</h2>
             {s.role && <p className="text-sm opacity-50 mb-3">{s.role}</p>}
             {s.talkTitle && (
