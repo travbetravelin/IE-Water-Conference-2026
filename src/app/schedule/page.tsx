@@ -45,7 +45,7 @@ const schedule: Day[] = [
       { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
       { time: "1:15–2:15 pm", title: "Botanical Walk", speaker: "Mike Halverson" },
-      { time: "2:30–3:00 pm", title: "Presentation" },
+      { time: "2:30–3:00 pm", title: "Discussion Panel" },
       {
         time: "3:00–5:00 pm",
         title: "Practical Breakout Sessions",
