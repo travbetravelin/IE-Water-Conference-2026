@@ -10,6 +10,7 @@ type Session = {
   title: string;
   speaker?: string;
   speakerUrl?: string;
+  speakers?: { name: string; url?: string }[];
   note?: string;
   type?: "keynote" | "breakout" | "social" | "ceremony" | "meal";
   breakoutOptions?: string[];
@@ -115,7 +116,7 @@ const schedule: Day[] = [
         ],
       },
       { time: "10:00–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
-      { time: "11:00 am–12:00 pm", title: "Our shared challenge is to intelligently restore the health of our global biosphere, acting with urgency as if our lives depend on it, which they do", speaker: "Mark Nelson & Meridel Rubenstein", speakerUrl: "/speakers#mark-nelson", type: "keynote" },
+      { time: "11:00 am–12:00 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
       { time: "1:30–2:15 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", speakerUrl: "/speakers#nino-saggio", type: "keynote" },
       { time: "2:15–3:00 pm", title: "Presentation", speaker: "Zack Withers, Polk's Folly", speakerUrl: "/speakers#zack-withers" },
@@ -220,6 +221,20 @@ export default function SchedulePage() {
                             {s.speaker}
                           </Link>
                         ) : s.speaker}
+                      </p>
+                    )}
+                    {s.speakers && (
+                      <p className="text-xs opacity-60 mt-0.5">
+                        {s.speakers.map((sp, i) => (
+                          <span key={sp.name}>
+                            {i > 0 && " · "}
+                            {sp.url ? (
+                              <Link href={sp.url} style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+                                {sp.name}
+                              </Link>
+                            ) : sp.name}
+                          </span>
+                        ))}
                       </p>
                     )}
                     {s.note && (

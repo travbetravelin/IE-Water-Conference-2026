@@ -42,11 +42,18 @@ const speakers: Speaker[] = [
     talkAbstract: "Changing our paradigms to become more indigenous by weaving insights from 40,000 years of ancestral knowledge that connects the heart and soul to the earth that escorts us into a new awareness of agriculture. Examine Indigenous farming and biochar perspectives that regenerate the land and food systems so that soil health, environmental health and human health can prosper.",
   },
   {
-    name: "Mark Nelson",
+    name: "Dr. Mark Nelson",
     id: "mark-nelson",
-    talkTitle: "Our shared challenge is to intelligently restore the health of our global biosphere, acting with urgency as if our lives depend on it, which they do",
+    role: "Director, Institute of Ecotechnics",
+    talkTitle: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures",
     bio: "Dr. Mark Nelson, Chairman emeritus of Institute of Ecotechnics (www.ecotechnics.edu), Director, Wastewater Gardens International (www.wastewatergardens.com), works in closed ecological systems, ecological engineering, restoration of damaged ecosystems, and ecological wastewater recycling. Mark served in the \"biospherian\" crew for Biosphere 2's closure experiment, 1991-1993. Books include \"Pushing Our Limits: Insights from Biosphere 2\" (2018), \"The Wastewater Gardener: Preserving the Planet One Flush at a Time\" (2014) and \"Life Under Glass: Crucial Lessons in Planetary Stewardship\" (2020). Wastewater Gardens were implemented in 14 countries, current project: Eden In Iraq for 10,000 Marsh Arabs (www.edeniniraq.com). BA Dartmouth College, MS University of Arizona, PhD University of Florida.",
     image: "/images/mark-nelson.jpg",
+  },
+  {
+    name: "Meridel Rubenstein",
+    id: "meridel-rubenstein",
+    role: "Artist · Project Director, Eden in Iraq Wastewater Garden project",
+    talkTitle: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures",
   },
   {
     name: "Indra Shekhar Singh",
