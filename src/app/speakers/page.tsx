@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SpeakerCard from "@/components/SpeakerCard";
 
 export const metadata: Metadata = {
   title: "Speakers — Synergy 2026",
@@ -120,47 +121,7 @@ export default function SpeakersPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {speakers.map((s) => (
-          <div
-            key={s.name}
-            id={s.id}
-            className="bg-white rounded-xl p-6 shadow-sm border border-black/5"
-          >
-            {s.image && (
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-black/10">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={s.image}
-                  alt={s.name}
-                  className="object-cover w-full h-full"
-                  style={{ objectPosition: s.imagePosition ?? "center" }}
-                />
-              </div>
-            )}
-            <h2 className="text-lg font-semibold mb-0.5">{s.name}</h2>
-            {s.role && <p className="text-sm opacity-50 mb-3">{s.role}</p>}
-            {s.talkTitle && (
-              <p
-                style={{ color: "var(--clay)" }}
-                className="text-sm font-medium italic mb-2"
-              >
-                {s.talkTitle}
-              </p>
-            )}
-            {s.talkAbstract && (
-              <p className="text-sm opacity-70 leading-relaxed mb-3">
-                {s.talkAbstract}
-              </p>
-            )}
-            {s.bio && (
-              <p className="text-sm opacity-60 leading-relaxed">{s.bio}</p>
-            )}
-            {!s.bio && !s.talkAbstract && (
-              <p className="text-sm opacity-40 italic">Bio coming soon.</p>
-            )}
-            {s.note && (
-              <p className="text-xs opacity-50 mt-2 font-mono">{s.note}</p>
-            )}
-          </div>
+          <SpeakerCard key={s.name} {...s} />
         ))}
       </div>
     </div>
