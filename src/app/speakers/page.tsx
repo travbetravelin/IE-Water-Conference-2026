@@ -96,30 +96,15 @@ const speakers: Speaker[] = [
     role: "Polk's Folly",
   },
   {
-    name: "Austin",
-    role: "Graziers Discussion",
+    name: "David Sundberg",
+    id: "david-sundberg",
   },
   {
-    name: "Hanna Zana",
-    role: "Evening Performance",
+    name: "Chili Hawes",
   },
   {
-    name: "Aubrey Williams",
-    role: "Theater Performance",
-  },
-  {
-    name: "Chili Hawses",
-  },
-  {
-    name: "Dave",
+    name: "Dave Neita",
     role: "Music & Poetry / Open Mic MC",
-  },
-  {
-    name: "Nick Est",
-    role: "Panel Moderator",
-    talkTitle: "Water Challenges Panel",
-    talkAbstract:
-      "A moderated conversation bringing together voices on water challenges including the Mountain Protest Appalachia MVP and a Ute Tribe Native Water Conservation Representative.",
   },
 ];
 

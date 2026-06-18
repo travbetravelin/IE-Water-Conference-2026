@@ -90,7 +90,7 @@ const schedule: Day[] = [
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
           "Movement and Metaphor, Body as Earth — Kristin Swiat",
-          "Water, Information and Maps — Simtable",
+          "Biochar — David Sundberg",
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
@@ -187,7 +187,7 @@ export default function SchedulePage() {
 
       <div className="space-y-10">
         {schedule.map((day) => (
-          <section key={day.label}>
+          <section key={day.label} id={day.label.toLowerCase()}>
             <div
               style={{ backgroundColor: "var(--water-dark)" }}
               className="text-white rounded-t-xl px-5 py-3"

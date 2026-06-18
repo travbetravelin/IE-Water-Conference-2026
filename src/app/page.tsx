@@ -73,28 +73,32 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                name: "Jan-Willem Jansens",
-                org: "Ecotone Landscape Planning",
-                title: "Crisis of our times, crisis of New Mexico",
+                name: "Joyce Skeet",
+                org: "Spirit Farm",
+                title: "Wild Plants, Herbs and Churro Sheep",
                 day: "Friday",
+                scheduleUrl: "/schedule#friday",
               },
               {
                 name: "James Skeet",
                 org: "Spirit Farm",
-                title: "Spirit Farm Keynote",
+                title: "Bio Cosmology and the Use of Biochar",
                 day: "Saturday",
+                scheduleUrl: "/schedule#saturday",
               },
               {
-                name: "Indra",
-                org: "",
-                title: "Indigenous decentralised water management and river revival",
+                name: "Amanda Bramble",
+                org: "Ampersand Sustainable Learning Center",
+                title: "We Are The Land and Waters",
                 day: "Saturday",
+                scheduleUrl: "/schedule#saturday",
               },
               {
-                name: "Eden In Iraq / IE Directors",
+                name: "Indra Shekhar Singh",
                 org: "",
-                title: "Eden In Iraq Presentation",
-                day: "Sunday",
+                title: "Indigenous Decentralised Water Management and River Revival",
+                day: "Saturday",
+                scheduleUrl: "/schedule#saturday",
               },
             ].map((k) => (
               <div
@@ -102,7 +106,13 @@ export default function Home() {
                 style={{ borderLeft: "4px solid var(--clay)" }}
                 className="pl-4 py-2"
               >
-                <p className="font-semibold text-base">{k.name}</p>
+                <Link
+                  href={k.scheduleUrl}
+                  style={{ color: "inherit" }}
+                  className="font-semibold text-base hover:underline underline-offset-2"
+                >
+                  {k.name}
+                </Link>
                 {k.org && <p className="text-sm opacity-60 mb-1">{k.org}</p>}
                 <p className="text-sm italic opacity-80">{k.title}</p>
                 <span
