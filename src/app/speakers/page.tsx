@@ -11,6 +11,7 @@ type Speaker = {
   bio?: string;
   talkTitle?: string;
   talkAbstract?: string;
+  note?: string;
   image?: string;
   imagePosition?: string;
 };
@@ -74,7 +75,12 @@ const speakers: Speaker[] = [
   },
   {
     name: "Amanda Bramble",
-    role: "Ampersand",
+    id: "amanda-bramble",
+    role: "Ampersand Sustainable Learning Center",
+    talkTitle: "We Are The Land and Waters",
+    talkAbstract:
+      "Restoring the land is not just something done \"out there.\" We are the land and waters. Techniques for living in harmony with the elements of our place are not new. Developing lifestyles that allow us to live appropriately with the changing availability of our resources is totally possible. The future asks us to streamline, and people are responding. Developing islands of coherence and hubs of resilience is essential. Connecting them is how we will thrive. In this presentation Amanda will share about the work of Ampersand Sustainable Learning Center and how mentorship and facilitating connection expands our possibilities, and invite discussion among the participants to promote cross-pollination.",
+    note: "Discussion Panel · 2:30–3:00 pm",
   },
   {
     name: "Austin",
@@ -152,6 +158,9 @@ export default function SpeakersPage() {
             )}
             {!s.bio && !s.talkAbstract && (
               <p className="text-sm opacity-40 italic">Bio coming soon.</p>
+            )}
+            {s.note && (
+              <p className="text-xs opacity-50 mt-2 font-mono">{s.note}</p>
             )}
           </div>
         ))}

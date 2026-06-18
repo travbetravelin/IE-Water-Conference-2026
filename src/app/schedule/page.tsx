@@ -81,9 +81,7 @@ const schedule: Day[] = [
       { time: "10:00–11:00 am", title: "Bio Cosmology and the Use of Biochar", speaker: "James Skeet", speakerUrl: "/speakers#james-skeet" },
       { time: "11:00 am–12:00 pm", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra Shekhar Singh", speakerUrl: "/speakers#indra-shekhar-singh", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:15–1:45 pm", title: "Presentation", speaker: "Zack Withers" },
-      { time: "1:45–2:15 pm", title: "Presentation", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center" },
-      { time: "2:15–2:45 pm", title: "Presentation", speaker: "Author" },
+      { time: "1:30–2:30 pm", title: "We Are The Land and Waters", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center", speakerUrl: "/speakers#amanda-bramble" },
       {
         time: "3:00–5:00 pm",
         title: "Breakout Sessions",
@@ -98,9 +96,8 @@ const schedule: Day[] = [
       { time: "5:30–6:00 pm", title: "Presentation Prep", note: "Breakout spaces: Dome, Yurt, Courtyard, Orchard" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each · Evening program at the Dome", type: "breakout" },
-      { time: "7:45–9:15 pm", title: "Hanna Zana — Solo Folk Music Concert", type: "social" },
-      { time: "9:15–9:30 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
-      { time: "9:30–11:00 pm", title: "Music and Dance at Dome", type: "social" },
+      { time: "7:45–8:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
+      { time: "8:00–9:30 pm", title: "Music and Dance at Dome", type: "social" },
     ],
   },
   {
