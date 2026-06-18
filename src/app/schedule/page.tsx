@@ -117,9 +117,8 @@ const schedule: Day[] = [
       { time: "10:00–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
       { time: "11:00 am–12:00 pm", title: "Our shared challenge is to intelligently restore the health of our global biosphere, acting with urgency as if our lives depend on it, which they do", speaker: "Mark Nelson & Meridel Rubenstein", speakerUrl: "/speakers#mark-nelson", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:15–1:45 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", type: "keynote" },
-      { time: "1:45–2:15 pm", title: "Presentation" },
-      { time: "2:15–2:45 pm", title: "Presentation" },
+      { time: "1:30–2:15 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", speakerUrl: "/speakers#nino-saggio", type: "keynote" },
+      { time: "2:15–3:00 pm", title: "Presentation", speaker: "Zack Withers, Polk's Folly", speakerUrl: "/speakers#zack-withers" },
       {
         time: "3:00–5:00 pm",
         title: "Breakout Sessions",
@@ -127,7 +126,8 @@ const schedule: Day[] = [
         breakoutOptions: [
           "Movement and Metaphor, Body as Earth — Kristin Swiat",
           "Building Erosion Control Structures — Jan-Willem Jansens",
-          "Composting Ceremony Preparation — James Skeet",
+          "Composting Ceremony Preparation — Spirit Farm Team",
+          "Herbal Preparations — Joyce Skeet",
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
@@ -240,7 +240,16 @@ export default function SchedulePage() {
                                 ) : (
                                   <strong>{session}</strong>
                                 )}
-                                {leader && <span className="opacity-60"> — {leader}</span>}
+                                {leader && (
+                                  <span className="opacity-60">
+                                    {" — "}
+                                    {leader === "Joyce Skeet" ? (
+                                      <Link href="/speakers#joyce-skeet" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+                                        {leader}
+                                      </Link>
+                                    ) : leader}
+                                  </span>
+                                )}
                               </span>
                             </li>
                           );
