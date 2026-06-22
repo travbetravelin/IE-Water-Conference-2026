@@ -25,7 +25,7 @@ export default function Home() {
             2026 Synergia Ranch Conference
           </p>
           <p className="text-sm uppercase tracking-widest opacity-70 mt-2 mb-10">
-            July 17–19, 2026 · Santa Fe, NM
+            July 16–19, 2026 · Santa Fe, NM
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
