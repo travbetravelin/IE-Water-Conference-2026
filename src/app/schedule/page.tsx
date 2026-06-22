@@ -41,7 +41,7 @@ const schedule: Day[] = [
       { time: "9:00–9:15 am", title: "Opening Water Ceremony", note: "All participants bring water to add to a shared vessel. Prayer and communal mixing to open the conference.", type: "ceremony" },
       { time: "9:15–9:45 am", title: "Walk Through Arroyos and Orchard" },
       { time: "9:45 am", title: "Opening Speech" },
-      { time: "10:00–11:00 am", title: "Crisis of our times, crisis of New Mexico", speaker: "Jan-Willem Jansens, Ecotone Landscape Planning", type: "keynote", note: "Inaugural keynote" },
+      { time: "10:00–11:00 am", title: "Water is Life: Cultivating Roots, Connections, and Movement", speaker: "Jan-Willem Jansens, Ecotone Landscape Planning", type: "keynote", note: "Inaugural keynote" },
       { time: "11:00–11:15 am", title: "Break" },
       { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
