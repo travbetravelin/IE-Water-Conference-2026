@@ -103,6 +103,7 @@ const speakers: Speaker[] = [
     name: "Zack Withers",
     id: "zack-withers",
     role: "Polk's Folly",
+    talkTitle: "Water is Life: Pushing Back Against the Commodification of Water in New Mexico and Building Community Capacity of Stewarding Water Resources in Increasingly Arid Environments",
   },
   {
     name: "David Sundberg",
