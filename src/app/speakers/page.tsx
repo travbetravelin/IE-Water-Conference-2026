@@ -97,7 +97,7 @@ const speakers: Speaker[] = [
     talkAbstract:
       "Restoring the land is not just something done \"out there.\" We are the land and waters. Techniques for living in harmony with the elements of our place are not new. Developing lifestyles that allow us to live appropriately with the changing availability of our resources is totally possible. The future asks us to streamline, and people are responding. Developing islands of coherence and hubs of resilience is essential. Connecting them is how we will thrive. In this presentation Amanda will share about the work of Ampersand Sustainable Learning Center and how mentorship and facilitating connection expands our possibilities, and invite discussion among the participants to promote cross-pollination.",
     bio: "Amanda Bramble is the director and systems designer at Ampersand Sustainable Learning Center in Cerrillos, NM. She teaches about permaculture, greenhouse design, natural building, passive solar, watershed restoration, and water conscious systems. She designed and crafted Ampersand's infrastructure to cultivate respectful and conscious relationships with the natural elements that support life. She guides apprentices and interns at Ampersand and teaches at local colleges and educational organizations. Amanda's Earthstar mentorship program focuses on not only teaching skills but weaving the community support structures essential to creating a vibrant future.",
-    note: "Discussion Panel · 2:30–3:00 pm",
+    note: "Keynote · Sunday · 9:15–10:15 am",
   },
   {
     name: "Zack Withers",

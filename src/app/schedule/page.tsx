@@ -12,6 +12,7 @@ type Session = {
   speakerUrl?: string;
   speakers?: { name: string; url?: string }[];
   note?: string;
+  italic?: boolean;
   type?: "keynote" | "breakout" | "social" | "ceremony" | "meal";
   breakoutOptions?: string[];
 };
@@ -43,7 +44,7 @@ const schedule: Day[] = [
       { time: "9:45 am", title: "Opening Speech" },
       { time: "10:00–11:00 am", title: "Water is Life: Cultivating Roots, Connections, and Movement", speaker: "Jan-Willem Jansens, Ecotone Landscape Planning", speakerUrl: "/speakers#jan-willem-jansens", type: "keynote", note: "Inaugural keynote" },
       { time: "11:00–11:15 am", title: "Break" },
-      { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet" },
+      { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
       { time: "1:15–2:15 pm", title: "Botanical Walk", speaker: "Mike Halverson" },
       { time: "2:30–3:00 pm", title: "Discussion Panel" },
@@ -79,10 +80,10 @@ const schedule: Day[] = [
           "Painting in Nature",
         ],
       },
-      { time: "10:00–11:00 am", title: "Bio Cosmology and the Use of Biochar", speaker: "James Skeet", speakerUrl: "/speakers#james-skeet" },
+      { time: "10:00–11:00 am", title: "Bio Cosmology and the Use of Biochar", speaker: "James Skeet", speakerUrl: "/speakers#james-skeet", type: "keynote" },
       { time: "11:00 am–12:00 pm", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra Shekhar Singh", speakerUrl: "/speakers#indra-shekhar-singh", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:30–2:30 pm", title: "We Are The Land and Waters", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center", speakerUrl: "/speakers#amanda-bramble" },
+      { time: "1:30–2:30 pm", title: "Presentation" },
       {
         time: "3:00–5:00 pm",
         title: "Breakout Sessions",
@@ -106,17 +107,10 @@ const schedule: Day[] = [
     date: "July 19 — Day 3",
     sessions: [
       { time: "8:00–9:00 am", title: "Breakfast", type: "meal" },
-      {
-        time: "9:00–9:45 am",
-        title: "Optional Morning Sessions",
-        type: "breakout",
-        breakoutOptions: [
-          "Nature Walk in the Arroyos",
-          "Painting in Nature",
-        ],
-      },
-      { time: "10:00–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
-      { time: "11:00 am–12:00 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
+      { time: "9:15–10:15 am", title: "We Are The Land and Waters", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center", speakerUrl: "/speakers#amanda-bramble", type: "keynote" },
+      { time: "10:15–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
+      { time: "11:00–11:15 am", title: "15 Min Break", italic: true },
+      { time: "11:15 am–12:15 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
       { time: "1:30–2:15 pm", title: "Beyond the Liquid: Architectural Responses to the States and Crises of Water", speaker: "Nino Saggio", speakerUrl: "/speakers#nino-saggio", type: "keynote" },
       { time: "2:15–3:00 pm", title: "Presentation", speaker: "Zack Withers, Polk's Folly", speakerUrl: "/speakers#zack-withers" },
@@ -209,7 +203,7 @@ export default function SchedulePage() {
                   <p className="text-xs opacity-50 pt-0.5 font-mono tabular-nums">{s.time}</p>
                   <div>
                     <div className="flex items-start gap-2 flex-wrap">
-                      <p className="font-medium text-sm">{s.title}</p>
+                      <p className={`font-medium text-sm${s.italic ? " italic opacity-60" : ""}`}>{s.title}</p>
                       {s.type && (
                         <span
                           className="text-xs px-2 py-0.5 rounded-full text-white shrink-0"

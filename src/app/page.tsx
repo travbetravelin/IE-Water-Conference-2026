@@ -94,11 +94,11 @@ export default function Home() {
                 nameUrl: "/schedule#saturday",
               },
               {
-                name: "Indra Shekhar Singh",
-                org: "",
-                title: "Indigenous Decentralised Water Management and River Revival",
-                day: "Saturday",
-                nameUrl: "/speakers#indra-shekhar-singh",
+                name: "Amanda Bramble",
+                org: "Ampersand Sustainable Learning Center",
+                title: "We Are The Land and Waters",
+                day: "Sunday",
+                nameUrl: "/schedule#sunday",
               },
             ].map((k) => (
               <div
