@@ -61,9 +61,13 @@ export default function SpeakerCard(props: SpeakerCardProps) {
       {hasBio && (
         <>
           <div
-            className={`overflow-hidden transition-all duration-300 ${bioOpen ? "max-h-[600px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+            className={`overflow-hidden transition-all duration-300 ${bioOpen ? "max-h-[3000px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}
           >
-            <p className="text-sm opacity-60 leading-relaxed border-t border-black/10 pt-3">{bio}</p>
+            <div className="text-sm opacity-60 leading-relaxed border-t border-black/10 pt-3 space-y-3">
+              {bio!.split("\n\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
           </div>
           <p className="text-xs mt-3 opacity-40 self-start">
             {bioOpen ? "Hide bio ↑" : "Read bio ↓"}

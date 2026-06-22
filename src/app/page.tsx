@@ -73,32 +73,32 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
+                name: "Jan-Willem Jansens",
+                org: "Ecotone Landscape Planning",
+                title: "Water is Life: Cultivating Roots, Connections, and Movement",
+                day: "Friday",
+                nameUrl: "/schedule#friday",
+              },
+              {
                 name: "Joyce Skeet",
                 org: "Spirit Farm",
                 title: "Wild Plants, Herbs and Churro Sheep",
                 day: "Friday",
-                scheduleUrl: "/schedule#friday",
+                nameUrl: "/schedule#friday",
               },
               {
                 name: "James Skeet",
                 org: "Spirit Farm",
                 title: "Bio Cosmology and the Use of Biochar",
                 day: "Saturday",
-                scheduleUrl: "/schedule#saturday",
-              },
-              {
-                name: "Amanda Bramble",
-                org: "Ampersand Sustainable Learning Center",
-                title: "We Are The Land and Waters",
-                day: "Saturday",
-                scheduleUrl: "/schedule#saturday",
+                nameUrl: "/schedule#saturday",
               },
               {
                 name: "Indra Shekhar Singh",
                 org: "",
                 title: "Indigenous Decentralised Water Management and River Revival",
                 day: "Saturday",
-                scheduleUrl: "/schedule#saturday",
+                nameUrl: "/speakers#indra-shekhar-singh",
               },
             ].map((k) => (
               <div
@@ -107,7 +107,7 @@ export default function Home() {
                 className="pl-4 py-2"
               >
                 <Link
-                  href={k.scheduleUrl}
+                  href={k.nameUrl}
                   style={{ color: "inherit" }}
                   className="font-semibold text-base hover:underline underline-offset-2"
                 >

@@ -41,7 +41,7 @@ const schedule: Day[] = [
       { time: "9:00–9:15 am", title: "Opening Water Ceremony", note: "All participants bring water to add to a shared vessel. Prayer and communal mixing to open the conference.", type: "ceremony" },
       { time: "9:15–9:45 am", title: "Walk Through Arroyos and Orchard" },
       { time: "9:45 am", title: "Opening Speech" },
-      { time: "10:00–11:00 am", title: "Water is Life: Cultivating Roots, Connections, and Movement", speaker: "Jan-Willem Jansens, Ecotone Landscape Planning", type: "keynote", note: "Inaugural keynote" },
+      { time: "10:00–11:00 am", title: "Water is Life: Cultivating Roots, Connections, and Movement", speaker: "Jan-Willem Jansens, Ecotone Landscape Planning", speakerUrl: "/speakers#jan-willem-jansens", type: "keynote", note: "Inaugural keynote" },
       { time: "11:00–11:15 am", title: "Break" },
       { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
@@ -165,6 +165,11 @@ const typeLabels: Record<string, string> = {
   meal: "Meal",
 };
 
+const leaderLinks: Record<string, string> = {
+  "Joyce Skeet": "/speakers#joyce-skeet",
+  "Jan-Willem Jansens": "/speakers#jan-willem-jansens",
+};
+
 export default function SchedulePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
@@ -258,8 +263,8 @@ export default function SchedulePage() {
                                 {leader && (
                                   <span className="opacity-60">
                                     {" — "}
-                                    {leader === "Joyce Skeet" ? (
-                                      <Link href="/speakers#joyce-skeet" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+                                    {leaderLinks[leader] ? (
+                                      <Link href={leaderLinks[leader]} style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
                                         {leader}
                                       </Link>
                                     ) : leader}
