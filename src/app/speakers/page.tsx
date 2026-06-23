@@ -81,11 +81,6 @@ const speakers: Speaker[] = [
       "Water remains a fundamental pillar of the architectural imagination. This talk avoids a standard historical overview of water in design, opting instead to analyze what we define as the &ldquo;states of water&rdquo;&mdash;liquid, solid, and gaseous—and their specific inspirations for the built environment. The second part confronts the urgent paradigm shift caused by the global climate crisis, exploring how the architectural community has pioneered a holistic synergy between landscape and architecture where water is no longer a threat to be managed but a vital resource for reimagining urban projects.",
   },
   {
-    name: "Kristin Swiat",
-    talkTitle: "Art and Water",
-    bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
-  },
-  {
     name: "Mike Halverson",
     talkTitle: "Botanical Walk",
   },
@@ -118,6 +113,19 @@ const speakers: Speaker[] = [
   },
 ];
 
+const activities: Speaker[] = [
+  {
+    name: "Kristin Swiat",
+    talkTitle: "Movement and Metaphor, Body as Earth",
+    bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
+  },
+  {
+    name: "MoonShine",
+    role: "Nan Franzblau and Wind Coral",
+    talkAbstract: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
+  },
+];
+
 export default function SpeakersPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-16">
@@ -128,8 +136,21 @@ export default function SpeakersPage() {
         Full bios and session details for all confirmed speakers and presenters.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         {speakers.map((s) => (
+          <SpeakerCard key={s.name} {...s} />
+        ))}
+      </div>
+
+      <h2 style={{ color: "var(--water-dark)" }} className="text-2xl font-bold mb-2">
+        Events &amp; Activities
+      </h2>
+      <p className="opacity-60 mb-8">
+        Workshop leaders, performers, and special programming.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {activities.map((s) => (
           <SpeakerCard key={s.name} {...s} />
         ))}
       </div>

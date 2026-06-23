@@ -98,8 +98,9 @@ const schedule: Day[] = [
       { time: "5:30–6:00 pm", title: "Presentation Prep", note: "Breakout spaces: Dome, Yurt, Courtyard, Orchard" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each · Evening program at the Dome", type: "breakout" },
-      { time: "7:45–8:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
-      { time: "8:00–9:30 pm", title: "Music and Dance at Dome", type: "social" },
+      { time: "7:45–8:45 pm", title: "Moonshine", speaker: "Nan Franzblau and Wind Coral", type: "social" },
+      { time: "8:45–9:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
+      { time: "9:00–10:30 pm", title: "Music and Dance at Dome", type: "social" },
     ],
   },
   {
