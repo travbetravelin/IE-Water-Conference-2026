@@ -28,7 +28,18 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold text-white mb-2">Sponsors</p>
-          <p className="opacity-70 italic">Sponsor information coming soon.</p>
+          <ul className="space-y-1 opacity-70">
+            {[
+              "Cruces Creatives",
+              "New Mexico Healthy Soil Working Group",
+              "Institute of Ecotechnics",
+              "Santa Fe Pojoaque Soil and Water Conservation District",
+              "Synergia Ranch",
+              "Anonymous donors",
+            ].map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="border-t border-white/10 text-center text-xs opacity-40 py-4">
