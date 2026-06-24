@@ -3,10 +3,13 @@ export function Footer() {
     <footer style={{ backgroundColor: "var(--charcoal)", color: "var(--sand)" }} className="mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         <div>
-          <p className="font-semibold text-white mb-1">Synergy 2026</p>
+          <p className="font-semibold text-white mb-1">Synergia 2026</p>
           <p className="opacity-70">Water, Wind and Wisdom</p>
-          <p className="opacity-70">July 17–19, 2026</p>
-          <p className="opacity-70">Synergia Ranch · Santa Fe, NM</p>
+          <p className="opacity-70">July 16–19, 2026</p>
+          <p className="opacity-70">
+            <a href="https://synergiaranch.com/" className="hover:text-white transition-colors">Synergia Ranch</a>
+            {" · Santa Fe, NM"}
+          </p>
         </div>
         <div>
           <p className="font-semibold text-white mb-2">Quick Links</p>
@@ -15,7 +18,7 @@ export function Footer() {
               ["Schedule", "/schedule"],
               ["Speakers", "/speakers"],
               ["Registration", "/registration"],
-              ["Getting There", "/getting-there"],
+              ["Getting There", "https://synergiaranch.com/directions/"],
               ["FAQ", "/faq"],
             ].map(([label, href]) => (
               <li key={href}>
