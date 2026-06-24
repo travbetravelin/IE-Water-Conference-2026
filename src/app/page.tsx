@@ -97,8 +97,8 @@ export default function Home() {
                 name: "Amanda Bramble",
                 org: "Ampersand Sustainable Learning Center",
                 title: "We Are The Land and Waters",
-                day: "Sunday",
-                nameUrl: "/schedule#sunday",
+                day: "Saturday",
+                nameUrl: "/schedule#saturday",
               },
             ].map((k) => (
               <div

@@ -83,7 +83,7 @@ const schedule: Day[] = [
       { time: "10:00–11:00 am", title: "Bio Cosmology and the Use of Biochar", speaker: "James Skeet", speakerUrl: "/speakers#james-skeet", type: "keynote" },
       { time: "11:00 am–12:00 pm", title: "Indigenous Decentralised Water Management and River Revival", speaker: "Indra Shekhar Singh", speakerUrl: "/speakers#indra-shekhar-singh", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:30–2:30 pm", title: "Presentation" },
+      { time: "1:30–2:30 pm", title: "We Are The Land and Waters", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center", speakerUrl: "/speakers#amanda-bramble", type: "keynote" },
       {
         time: "3:00–5:00 pm",
         title: "Breakout Sessions",
@@ -98,7 +98,7 @@ const schedule: Day[] = [
       { time: "5:30–6:00 pm", title: "Presentation Prep", note: "Breakout spaces: Dome, Yurt, Courtyard, Orchard" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each · Evening program at the Dome", type: "breakout" },
-      { time: "7:45–8:45 pm", title: "Moonshine", speaker: "Nan Franzblau and Wind Coral", type: "social" },
+      { time: "7:45–8:45 pm", title: "Moonshine", speaker: "Nan Franzblau and Wind Coral", speakerUrl: "/speakers#moonshine", type: "social" },
       { time: "8:45–9:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
       { time: "9:00–10:30 pm", title: "Music and Dance at Dome", type: "social" },
     ],
@@ -108,7 +108,7 @@ const schedule: Day[] = [
     date: "July 19 — Day 3",
     sessions: [
       { time: "8:00–9:00 am", title: "Breakfast", type: "meal" },
-      { time: "9:15–10:15 am", title: "We Are The Land and Waters", speaker: "Amanda Bramble, Ampersand Sustainable Learning Center", speakerUrl: "/speakers#amanda-bramble", type: "keynote" },
+      { time: "9:15–10:15 am", title: "Presentation" },
       { time: "10:15–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
       { time: "11:00–11:15 am", title: "15 Min Break", italic: true },
       { time: "11:15 am–12:15 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
