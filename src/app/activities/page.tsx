@@ -11,16 +11,34 @@ type Activity = {
   title: string;
   lead: string;
   description: React.ReactNode;
+  note?: React.ReactNode;
   id?: string;
 };
 
 const activities: Activity[] = [
   {
-    icon: "🌿",
-    title: "Volunteer Field Work",
+    icon: "🏗️",
+    title: "Building Erosion Control Structures",
     lead: "Jan-Willem Jansens, Ecotone Landscape Planning",
-    description:
-      "Hands-on restoration work on the ranch lands, including building erosion control structures from ecologically harvested piñon-juniper materials and the Shram Dan (gift of labor) sessions. A direct opportunity to learn and contribute to regenerative land stewardship.",
+    description: (
+      <>
+        Hands-on restoration work on the ranch lands with{" "}
+        <Link href="/speakers#jan-willem-jansens" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Jan-Willem Jansens
+        </Link>
+        , including building erosion control structures from ecologically harvested piñon-juniper materials and the Shram Dan (gift of labor) sessions. A direct opportunity to learn and contribute to regenerative land stewardship.
+      </>
+    ),
+    note: (
+      <>
+        <Link href="/schedule#friday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">Friday</Link>
+        {", "}
+        <Link href="/schedule#saturday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">Saturday</Link>
+        {" & "}
+        <Link href="/schedule#sunday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">Sunday</Link>
+        {" · 3:00–5:00 pm"}
+      </>
+    ),
   },
   {
     icon: "🔥",
@@ -138,6 +156,9 @@ export default function ActivitiesPage() {
             <h2 className="text-base font-semibold mb-1">{a.title}</h2>
             <p className="text-xs opacity-50 mb-3">{a.lead}</p>
             <p className="text-sm opacity-70 leading-relaxed">{a.description}</p>
+            {a.note && (
+              <p className="text-xs opacity-50 mt-2 font-mono">{a.note}</p>
+            )}
           </div>
         ))}
       </div>
