@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Getting There — Synergy 2026",
+  title: "Getting There — Synergia 2026",
 };
 
 export default function GettingTherePage() {

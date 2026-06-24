@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Accommodations — Synergy 2026",
+  title: "Accommodations — Synergia 2026",
 };
 
 export default function AccommodationsPage() {
@@ -10,7 +10,7 @@ export default function AccommodationsPage() {
       <h1 style={{ color: "var(--water-dark)" }} className="text-4xl font-bold mb-2">
         Accommodations
       </h1>
-      <p className="opacity-60 mb-10">Where to stay during Synergy 2026</p>
+      <p className="opacity-60 mb-10">Where to stay during Synergia 2026</p>
 
       {/* On-site */}
       <section className="mb-10">

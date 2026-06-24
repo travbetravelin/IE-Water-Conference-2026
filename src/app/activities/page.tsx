@@ -6,8 +6,21 @@ export const metadata: Metadata = {
   title: "Activities — Synergia 2026",
 };
 
+const GeoDome = () => (
+  <svg viewBox="0 0 48 36" className="w-9 h-9 mx-auto" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <line x1="1" y1="34" x2="47" y2="34" />
+    <path d="M 1 34 A 23 23 0 0 1 47 34" />
+    <line x1="24" y1="11" x2="24" y2="34" />
+    <line x1="1" y1="34" x2="24" y2="11" />
+    <line x1="47" y1="34" x2="24" y2="11" />
+    <path d="M 8.5 24 A 16 7 0 0 1 39.5 24" />
+    <line x1="8.5" y1="24" x2="24" y2="11" />
+    <line x1="39.5" y1="24" x2="24" y2="11" />
+  </svg>
+);
+
 type Activity = {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   lead: string;
   description: React.ReactNode;
@@ -92,7 +105,7 @@ const activities: Activity[] = [
     ),
   },
   {
-    icon: "🌐",
+    icon: <GeoDome />,
     title: "Historical Tour of Ranch Facilities",
     lead: "Synergia Ranch Hosts",
     description:
@@ -152,7 +165,7 @@ export default function ActivitiesPage() {
             id={a.id}
             className="bg-white rounded-xl p-6 border border-black/5 shadow-sm"
           >
-            <p className="text-3xl mb-3">{a.icon}</p>
+            <div className="text-3xl mb-3">{a.icon}</div>
             <h2 className="text-base font-semibold mb-1">{a.title}</h2>
             <p className="text-xs opacity-50 mb-3">{a.lead}</p>
             <p className="text-sm opacity-70 leading-relaxed">{a.description}</p>

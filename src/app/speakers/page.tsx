@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SpeakerCard from "@/components/SpeakerCard";
 
 export const metadata: Metadata = {
-  title: "Speakers — Synergy 2026",
+  title: "Speakers — Synergia 2026",
 };
 
 type Speaker = {

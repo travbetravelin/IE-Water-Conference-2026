@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Venue — Synergy 2026",
+  title: "Venue — Synergia 2026",
 };
 
 const photos = [

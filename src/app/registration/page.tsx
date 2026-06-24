@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Registration — Synergy 2026",
+  title: "Registration — Synergia 2026",
 };
 
 export default function RegistrationPage() {

@@ -18,7 +18,7 @@ export function Footer() {
               ["Schedule", "/schedule"],
               ["Speakers", "/speakers"],
               ["Registration", "/registration"],
-              ["Getting There", "https://synergiaranch.com/directions/"],
+              ["Getting There", "/getting-there"],
               ["FAQ", "/faq"],
             ].map(([label, href]) => (
               <li key={href}>
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 text-center text-xs opacity-40 py-4">
-        © 2026 IE Water Conference. All rights reserved.
+        © 2026 Synergia Conference. All rights reserved.
       </div>
     </footer>
   );
