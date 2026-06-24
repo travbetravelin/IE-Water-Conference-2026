@@ -17,7 +17,7 @@ type Activity = {
 
 const activities: Activity[] = [
   {
-    icon: "🏗️",
+    icon: "🪨",
     title: "Building Erosion Control Structures",
     lead: "Jan-Willem Jansens, Ecotone Landscape Planning",
     description: (
@@ -59,7 +59,7 @@ const activities: Activity[] = [
     ),
   },
   {
-    icon: "🌺",
+    icon: "🌸",
     title: "Herbal Preparations",
     lead: "Joyce Skeet, Spirit Farm",
     description: (
@@ -92,14 +92,14 @@ const activities: Activity[] = [
     ),
   },
   {
-    icon: "🏛️",
+    icon: "🌐",
     title: "Historical Tour of Ranch Facilities",
     lead: "Synergia Ranch Hosts",
     description:
       "A guided tour of the ranch's history, architecture, and decades of ecological and community experimentation. Learn about the unique story of Synergia Ranch and its place in regenerative land stewardship.",
   },
   {
-    icon: "🌊",
+    icon: "🌾",
     title: "Walk Through Arroyos and Orchard",
     lead: "Ranch Guides",
     description:

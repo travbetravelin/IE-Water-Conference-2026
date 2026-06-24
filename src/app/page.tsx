@@ -145,28 +145,29 @@ export default function Home() {
           >
             Activities
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
-            <div className="relative rounded-xl overflow-hidden shadow-md" style={{ height: "240px" }}>
-              <Image
-                src="/images/arroyo.jpg"
-                alt="Restoration work in the arroyo at Synergia Ranch"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-center text-sm">
-              {[
-                { icon: "🌿", label: "Volunteer Field Work" },
-                { icon: "💃", label: "Dance & Movement" },
-                { icon: "🏛️", label: "Ranch Historical Tour" },
-                { icon: "🌊", label: "Arroyo & Orchard Walk" },
-              ].map((a) => (
-                <div key={a.label} className="bg-white rounded-lg p-5 shadow-sm">
-                  <p className="text-3xl mb-2">{a.icon}</p>
-                  <p className="font-medium">{a.label}</p>
-                </div>
-              ))}
-            </div>
+          <div className="relative rounded-xl overflow-hidden shadow-md mb-8" style={{ height: "240px" }}>
+            <Image
+              src="/images/arroyo.jpg"
+              alt="Restoration work in the arroyo at Synergia Ranch"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center text-sm mb-8">
+            {[
+              { icon: "🪨", label: "Building Erosion Control Structures" },
+              { icon: "🔥", label: "Biochar in Practice" },
+              { icon: "🌸", label: "Herbal Preparations" },
+              { icon: "💃", label: "Movement and Metaphor, Body as Earth" },
+              { icon: "🌐", label: "Historical Tour of Ranch Facilities" },
+              { icon: "🌾", label: "Walk Through Arroyos and Orchard" },
+              { icon: "🌱", label: "Botanical Walk" },
+            ].map((a) => (
+              <div key={a.label} className="bg-white rounded-lg p-5 shadow-sm">
+                <p className="text-3xl mb-2">{a.icon}</p>
+                <p className="font-medium">{a.label}</p>
+              </div>
+            ))}
           </div>
           <div className="text-center">
             <Link
