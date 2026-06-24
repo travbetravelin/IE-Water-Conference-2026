@@ -23,6 +23,42 @@ const activities: Activity[] = [
       "Hands-on restoration work on the ranch lands, including building erosion control structures from ecologically harvested piñon-juniper materials and the Shram Dan (gift of labor) sessions. A direct opportunity to learn and contribute to regenerative land stewardship.",
   },
   {
+    icon: "🔥",
+    title: "Biochar in Practice",
+    lead: "James Skeet, Spirit Farm · David Sundberg, Santa Fe Farmers Market Institute",
+    description: (
+      <>
+        In these two two-hour sessions,{" "}
+        <Link href="/schedule#friday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Friday
+        </Link>{" "}
+        and{" "}
+        <Link href="/schedule#saturday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Saturday
+        </Link>{" "}
+        respectively, participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
+      </>
+    ),
+  },
+  {
+    icon: "🌺",
+    title: "Herbal Preparations",
+    lead: "Joyce Skeet, Spirit Farm",
+    description: (
+      <>
+        Following{" "}
+        <Link href="/speakers#joyce-skeet" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          her talk on Friday
+        </Link>
+        ,{" "}
+        <Link href="/speakers#joyce-skeet" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Joyce Skeet
+        </Link>{" "}
+        takes us on a two-hour practical session making Herbal Preparations with native herbs.
+      </>
+    ),
+  },
+  {
     icon: "💃",
     title: "Movement and Metaphor, Body as Earth",
     id: "movement",
@@ -50,24 +86,6 @@ const activities: Activity[] = [
     lead: "Mike Halverson",
     description:
       "A guided botanical walk identifying native and cultivated plants in the ranch environment, with a focus on water-adapted species and land relationships.",
-  },
-  {
-    icon: "🔥",
-    title: "Biochar in Practice",
-    lead: "James Skeet, Spirit Farm · David Sundberg",
-    description: (
-      <>
-        In these two two-hour sessions,{" "}
-        <Link href="/schedule#friday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
-          Friday
-        </Link>{" "}
-        and{" "}
-        <Link href="/schedule#saturday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
-          Saturday
-        </Link>{" "}
-        respectively, participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
-      </>
-    ),
   },
 ];
 

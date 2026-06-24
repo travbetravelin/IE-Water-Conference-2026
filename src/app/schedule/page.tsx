@@ -91,7 +91,7 @@ const schedule: Day[] = [
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
           "Movement and Metaphor, Body as Earth — Kristin Swiat",
-          "Biochar in Practice — David Sundberg",
+          "Biochar in Practice — David Sundberg, Santa Fe Farmers Market Institute",
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },

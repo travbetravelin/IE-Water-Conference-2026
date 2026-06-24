@@ -52,7 +52,9 @@ export default function SpeakerCard(props: SpeakerCardProps) {
         <p className="text-sm opacity-70 leading-relaxed mb-3">{talkAbstract}</p>
       )}
       {note && (
-        <p className="text-xs opacity-50 mt-1 font-mono">{note}</p>
+        <div className="text-xs opacity-50 mt-1 font-mono space-y-0.5">
+          {note.split("\n").map((line, i) => <p key={i}>{line}</p>)}
+        </div>
       )}
       {!bio && !talkAbstract && (
         <p className="text-sm opacity-40 italic">Bio coming soon.</p>
