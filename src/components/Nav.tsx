@@ -24,14 +24,19 @@ export function Nav() {
   return (
     <nav style={{ backgroundColor: "var(--water-dark)" }} className="sticky top-0 z-50 shadow-md">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/images/logo.svg"
-            alt="Synergia Ranch Agroecology"
-            width={200}
-            height={56}
-            style={{ filter: "brightness(0) invert(1)", height: "56px", width: "auto" }}
+            src="/images/logo-emblem.svg"
+            alt="Synergia Conference emblem"
+            width={54}
+            height={54}
+            style={{ filter: "brightness(0) invert(1)", height: "54px", width: "auto" }}
           />
+          <div className="text-white leading-tight">
+            <p className="text-xs font-light opacity-60 tracking-widest uppercase">2026</p>
+            <p className="font-bold text-base leading-tight">Synergia</p>
+            <p className="text-xs font-light opacity-80 tracking-wide">Conference</p>
+          </div>
         </Link>
 
         {/* Desktop */}
