@@ -118,6 +118,8 @@ const speakers: Speaker[] = [
 const activities: Speaker[] = [
   {
     name: "Kristin Swiat",
+    id: "kristin-swiat",
+    role: "Stonegate Farm, Balmville, NY",
     talkTitle: "Movement and Metaphor, Body as Earth",
     bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
   },

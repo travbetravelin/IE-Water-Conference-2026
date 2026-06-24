@@ -62,9 +62,16 @@ const activities: Activity[] = [
     icon: "💃",
     title: "Movement and Metaphor, Body as Earth",
     id: "movement",
-    lead: "Krisha",
-    description:
-      "Embodied movement sessions exploring the relationship between body, land, and water. Open to all experience levels.",
+    lead: "Kristin Swiat · Stonegate Farm, Balmville, NY",
+    description: (
+      <>
+        Embodied movement sessions with{" "}
+        <Link href="/speakers#kristin-swiat" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Kristin Swiat
+        </Link>{" "}
+        exploring the relationship between body, land, and water. Open to all experience levels.
+      </>
+    ),
   },
   {
     icon: "🏛️",
