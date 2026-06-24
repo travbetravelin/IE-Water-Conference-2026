@@ -55,7 +55,7 @@ const schedule: Day[] = [
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
           "Movement and Metaphor, Body as Earth — Kristin Swiat",
-          "Biochar — James Skeet, Spirit Farm",
+          "Biochar in Practice — James Skeet, Spirit Farm",
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
@@ -91,7 +91,7 @@ const schedule: Day[] = [
         breakoutOptions: [
           "Building Erosion Control Structures — Jan-Willem Jansens",
           "Movement and Metaphor, Body as Earth — Kristin Swiat",
-          "Biochar — David Sundberg",
+          "Biochar in Practice — David Sundberg",
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },

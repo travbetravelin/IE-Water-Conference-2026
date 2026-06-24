@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Activities — Synergy 2026",
+  title: "Activities — Synergia 2026",
 };
 
-const activities = [
+type Activity = {
+  icon: string;
+  title: string;
+  lead: string;
+  description: React.ReactNode;
+  id?: string;
+};
+
+const activities: Activity[] = [
   {
     icon: "🌿",
     title: "Volunteer Field Work",
@@ -16,6 +25,7 @@ const activities = [
   {
     icon: "💃",
     title: "Movement and Metaphor, Body as Earth",
+    id: "movement",
     lead: "Krisha",
     description:
       "Embodied movement sessions exploring the relationship between body, land, and water. Open to all experience levels.",
@@ -42,11 +52,22 @@ const activities = [
       "A guided botanical walk identifying native and cultivated plants in the ranch environment, with a focus on water-adapted species and land relationships.",
   },
   {
-    icon: "🎨",
-    title: "Art and Water",
-    lead: "Krisha",
-    description:
-      "A creative breakout session exploring artistic responses to water — its presence, absence, movement, and meaning. Open to all backgrounds.",
+    icon: "🔥",
+    title: "Biochar in Practice",
+    lead: "James Skeet, Spirit Farm · David Sundberg",
+    description: (
+      <>
+        In these two two-hour sessions,{" "}
+        <Link href="/schedule#friday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Friday
+        </Link>{" "}
+        and{" "}
+        <Link href="/schedule#saturday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Saturday
+        </Link>{" "}
+        respectively, participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
+      </>
+    ),
   },
 ];
 
@@ -57,8 +78,11 @@ export default function ActivitiesPage() {
         Activities
       </h1>
       <p className="opacity-60 mb-3">
-        Beyond the formal sessions, Synergy 2026 offers a range of participatory activities
-        woven throughout the three days.
+        Beyond the formal sessions,{" "}
+        <Link href="/" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          Synergia 2026
+        </Link>{" "}
+        offers a range of participatory activities woven throughout the three days.
       </p>
       <p className="text-sm opacity-40 italic mb-10">
         Final activity schedule will be confirmed closer to the event.
@@ -82,7 +106,7 @@ export default function ActivitiesPage() {
         {activities.map((a) => (
           <div
             key={a.title}
-            id={a.title === "Movement and Metaphor, Body as Earth" ? "movement" : undefined}
+            id={a.id}
             className="bg-white rounded-xl p-6 border border-black/5 shadow-sm"
           >
             <p className="text-3xl mb-3">{a.icon}</p>
