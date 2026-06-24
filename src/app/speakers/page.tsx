@@ -15,6 +15,13 @@ type Speaker = {
   note?: string;
   image?: string;
   imagePosition?: string;
+  coPresenter?: {
+    name: string;
+    id?: string;
+    role?: string;
+    image?: string;
+    imagePosition?: string;
+  };
 };
 
 const speakers: Speaker[] = [
@@ -55,13 +62,11 @@ const speakers: Speaker[] = [
     talkAbstract: "The talk will showcase an environmental and humanitarian project for the Marsh Arabs of southern Iraq. Their culture is one of humanity's oldest, as they lived for thousands of years in and with the historic marshlands of the Fertile Crescent. The Eden in Iraq pilot project will celebrate their rich eco-cultural legacies while dealing with the problems they and the marshlands face in a climate change world of water scarcity and water wars. The Wastewater Garden technology uses a nature-based approach and represents some of the new thinking about how to treat and reuse sewage to create beautiful green parklands, treating it as a renewable natural resource. This contrasts with the paradigm in wealthy countries where sewage is seen as a toxic waste requiring expensive infrastructure and resources to neutralize, then throw away. We need relatively low-cost and ecological solutions to the widespread pollution of drinking water by untreated sewage, a source of massive disease and death and environmental degradation in poorer countries.",
     bio: "Dr. Mark Nelson, Chairman emeritus of Institute of Ecotechnics (www.ecotechnics.edu), Director, Wastewater Gardens International (www.wastewatergardens.com), works in closed ecological systems, ecological engineering, restoration of damaged ecosystems, and ecological wastewater recycling. Mark served in the \"biospherian\" crew for Biosphere 2's closure experiment, 1991-1993. Books include \"Pushing Our Limits: Insights from Biosphere 2\" (2018), \"The Wastewater Gardener: Preserving the Planet One Flush at a Time\" (2014) and \"Life Under Glass: Crucial Lessons in Planetary Stewardship\" (2020). Wastewater Gardens were implemented in 14 countries, current project: Eden In Iraq for 10,000 Marsh Arabs (www.edeniniraq.com). BA Dartmouth College, MS University of Arizona, PhD University of Florida.",
     image: "/images/mark-nelson.jpg",
-  },
-  {
-    name: "Meridel Rubenstein",
-    id: "meridel-rubenstein",
-    role: "Artist · Project Director, Eden in Iraq Wastewater Garden project",
-    talkTitle: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures",
-    talkAbstract: "The talk will showcase an environmental and humanitarian project for the Marsh Arabs of southern Iraq. Their culture is one of humanity's oldest, as they lived for thousands of years in and with the historic marshlands of the Fertile Crescent. The Eden in Iraq pilot project will celebrate their rich eco-cultural legacies while dealing with the problems they and the marshlands face in a climate change world of water scarcity and water wars. The Wastewater Garden technology uses a nature-based approach and represents some of the new thinking about how to treat and reuse sewage to create beautiful green parklands, treating it as a renewable natural resource. This contrasts with the paradigm in wealthy countries where sewage is seen as a toxic waste requiring expensive infrastructure and resources to neutralize, then throw away. We need relatively low-cost and ecological solutions to the widespread pollution of drinking water by untreated sewage, a source of massive disease and death and environmental degradation in poorer countries.",
+    coPresenter: {
+      name: "Meridel Rubenstein",
+      id: "meridel-rubenstein",
+      role: "Artist · Project Director, Eden in Iraq Wastewater Garden project",
+    },
   },
   {
     name: "Indra Shekhar Singh",
@@ -83,7 +88,10 @@ const speakers: Speaker[] = [
   },
   {
     name: "Mike Halverson",
+    id: "mike-halverson",
+    role: "Santa Ana Native Plants, Pueblo of Santa Ana",
     talkTitle: "Botanical Walk",
+    bio: "Mike Halverson is the Nursery Manager at Santa Ana Native Plants, located on the Pueblo of Santa Ana. With decades of experience in the high-desert Southwest, he specializes in growing plants for restoration, pollinator habitat and cultural importance.\n\nUnder his leadership, the nursery produces over 250 native species used in restoration projects across the region, including Tribal natural resource programs.\n\nMike is also a passionate educator, sharing knowledge on native plants, water conservation, and climate-resilient landscapes. His work reflects a deep understanding of Southwest ecosystems and a commitment to restoring them.",
   },
   {
     name: "Amanda Bramble",
@@ -102,16 +110,7 @@ const speakers: Speaker[] = [
     talkTitle: "Water is Life: Pushing Back Against the Commodification of Water in New Mexico and Building Community Capacity of Stewarding Water Resources in Increasingly Arid Environments",
   },
   {
-    name: "David Sundberg",
-    id: "david-sundberg",
-    role: "Santa Fe Farmers Market Institute",
-  },
-  {
     name: "Chili Hawes",
-  },
-  {
-    name: "Dave Neita",
-    role: "Music & Poetry / Open Mic MC",
   },
 ];
 
@@ -128,6 +127,15 @@ const activities: Speaker[] = [
     id: "moonshine",
     role: "Nan Franzblau and Wind Coral",
     talkAbstract: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
+  },
+  {
+    name: "David Sundberg",
+    id: "david-sundberg",
+    role: "Santa Fe Farmers Market Institute",
+  },
+  {
+    name: "Dave Neita",
+    role: "Music & Poetry / Open Mic MC",
   },
 ];
 
