@@ -41,13 +41,15 @@ export default function Home() {
             July 16–19, 2026 · Santa Fe, NM
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/registration"
+            <a
+              href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ backgroundColor: "var(--clay)" }}
               className="px-8 py-3 rounded font-semibold text-white hover:opacity-90 transition-opacity shadow-lg"
             >
               Register Now
-            </Link>
+            </a>
             <Link
               href="/schedule"
               className="px-8 py-3 rounded font-semibold text-white border border-white/50 hover:bg-white/15 transition-colors"
@@ -224,13 +226,15 @@ export default function Home() {
         <p className="opacity-80 mb-6 max-w-lg mx-auto">
           Secure your spot at Synergia 2026. Space at Synergia Ranch is limited.
         </p>
-        <Link
-          href="/registration"
+        <a
+          href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-white font-semibold px-8 py-3 rounded hover:opacity-90 transition-opacity"
           style={{ color: "var(--clay)" }}
         >
           Register Now
-        </Link>
+        </a>
       </section>
     </div>
   );

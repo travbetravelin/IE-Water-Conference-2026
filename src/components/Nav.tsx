@@ -57,13 +57,15 @@ export function Nav() {
           ))}
         </ul>
 
-        <Link
-          href="/registration"
+        <a
+          href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ backgroundColor: "var(--clay)" }}
           className="hidden lg:inline-flex items-center px-4 py-1.5 rounded text-white text-sm font-medium hover:opacity-90 transition-opacity"
         >
           Register
-        </Link>
+        </a>
 
         {/* Mobile toggle */}
         <button
@@ -92,14 +94,15 @@ export function Nav() {
               {label}
             </Link>
           ))}
-          <Link
-            href="/registration"
-            onClick={() => setOpen(false)}
+          <a
+            href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ backgroundColor: "var(--clay)" }}
             className="mt-3 block text-center px-4 py-2 rounded text-white text-sm font-medium"
           >
             Register
-          </Link>
+          </a>
         </div>
       )}
     </nav>

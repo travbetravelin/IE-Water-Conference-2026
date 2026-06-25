@@ -41,15 +41,14 @@ export default function RegistrationPage() {
             ))}
           </ul>
           <a
-            href="#"
+            href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ backgroundColor: "var(--clay)" }}
             className="block text-center text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity"
           >
-            Register — Link Coming Soon
+            Register Now
           </a>
-          <p className="text-xs text-center opacity-40 mt-3">
-            Registration link will be available shortly. Contact us with questions.
-          </p>
         </div>
       </div>
 
