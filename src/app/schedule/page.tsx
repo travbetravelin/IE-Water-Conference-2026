@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 type Session = {
   time: string;
   title: string;
+  titleUrl?: string;
   speaker?: string;
   speakerUrl?: string;
   speakers?: { name: string; url?: string }[];
@@ -38,7 +39,7 @@ const schedule: Day[] = [
     label: "Friday",
     date: "July 17 — Day 1",
     sessions: [
-      { time: "8:00 am", title: "Breakfast", type: "meal" },
+      { time: "8:00–8:45 am", title: "Breakfast", type: "meal" },
       { time: "9:00–9:15 am", title: "Opening Water Ceremony", note: "All participants bring water to add to a shared vessel. Prayer and communal mixing to open the conference.", type: "ceremony" },
       { time: "9:15–9:45 am", title: "Walk Through Arroyos and Orchard" },
       { time: "9:45 am", title: "Opening Speech" },
@@ -46,8 +47,8 @@ const schedule: Day[] = [
       { time: "11:00–11:15 am", title: "Break" },
       { time: "11:15 am–12:15 pm", title: "Wild Plants, Herbs and Churro Sheep", speaker: "Joyce Skeet, Spirit Farm", speakerUrl: "/speakers#joyce-skeet", type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
-      { time: "1:15–2:15 pm", title: "Botanical Walk", speaker: "Mike Halverson" },
-      { time: "2:30–3:00 pm", title: "Discussion Panel" },
+      { time: "1:30–2:15 pm", title: "Botanical Walk", speaker: "Mike Halverson, Santa Ana Native Plants", speakerUrl: "/speakers#mike-halverson" },
+      { time: "2:15–3:00 pm", title: "Growing Resilience Through Trees For Food and Fodder", speaker: "Austin Unruh, Trees for Graziers", speakerUrl: "/speakers#austin-unruh", type: "keynote" },
       {
         time: "3:00–5:00 pm",
         title: "Practical Breakout Sessions",
@@ -59,10 +60,10 @@ const schedule: Day[] = [
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
-      { time: "5:30–6:00 pm", title: "Presentation Preparation for Session Groups" },
+      { time: "5:30–6:00 pm", title: "Presentation Preparation for Session Groups", titleUrl: "/activities#breakout-session-presentations" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each", type: "breakout" },
-      { time: "7:45–8:45 pm", title: "Poetry Jamming & Open Mic", speaker: "Dave Neita", type: "social" },
+      { time: "7:45–8:45 pm", title: "Poetry Jamming", speaker: "Dave Neita", speakerUrl: "/speakers#dave-neita", type: "social" },
       { time: "8:45–10:00 pm", title: "Music and Dance at Dome", type: "social" },
     ],
   },
@@ -70,7 +71,7 @@ const schedule: Day[] = [
     label: "Saturday",
     date: "July 18 — Day 2",
     sessions: [
-      { time: "8:00–9:00 am", title: "Breakfast", type: "meal" },
+      { time: "8:00–8:45 am", title: "Breakfast", type: "meal" },
       {
         time: "9:00–9:45 am",
         title: "Optional Morning Sessions",
@@ -95,21 +96,21 @@ const schedule: Day[] = [
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
-      { time: "5:30–6:00 pm", title: "Presentation Prep", note: "Breakout spaces: Dome, Yurt, Courtyard, Orchard" },
+      { time: "5:30–6:00 pm", title: "Presentation Preparation for Session Groups", titleUrl: "/activities#breakout-session-presentations" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each · Evening program at the Dome", type: "breakout" },
-      { time: "7:45–8:45 pm", title: "Moonshine", speaker: "Nan Franzblau and Wind Coral", speakerUrl: "/speakers#moonshine", type: "social" },
-      { time: "8:45–9:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
-      { time: "9:00–10:30 pm", title: "Music and Dance at Dome", type: "social" },
+      { time: "7:45–8:00 pm", title: "\"The Municipal Abattoir\"", speaker: "Chili Hawes · Dave Neita", note: "A rare, politically charged one-act play written in the late 1960s, exploring themes of totalitarianism and the loss of individual free will.", type: "social" },
+      { time: "8:00–9:30 pm", title: "Music concert \"We Belong to the Land\" by Moonshine", speaker: "Nan Franzblau and Wind Coral", speakerUrl: "/speakers#moonshine", type: "social" },
+      { time: "9:30–10:30 pm", title: "Music and Dance at Dome", type: "social" },
     ],
   },
   {
     label: "Sunday",
     date: "July 19 — Day 3",
     sessions: [
-      { time: "8:00–9:00 am", title: "Breakfast", type: "meal" },
+      { time: "8:00–8:45 am", title: "Breakfast", type: "meal" },
       { time: "9:15–10:15 am", title: "Presentation" },
-      { time: "10:15–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", type: "keynote" },
+      { time: "10:15–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", speakerUrl: "/speakers#chili-hawes", type: "keynote" },
       { time: "11:00–11:15 am", title: "15 Min Break", italic: true },
       { time: "11:15 am–12:15 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
@@ -127,7 +128,7 @@ const schedule: Day[] = [
         ],
       },
       { time: "5:00–5:30 pm", title: "Tea & Personal Time" },
-      { time: "5:30–6:00 pm", title: "Presentation Prep", note: "Breakout spaces: Dome, Yurt, Courtyard, Orchard" },
+      { time: "5:30–6:00 pm", title: "Presentation Preparation for Session Groups", titleUrl: "/activities#breakout-session-presentations" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each · Evening program at the Dome", type: "breakout" },
       { time: "7:45–8:15 pm", title: "Compost Ceremony", type: "ceremony" },
@@ -204,7 +205,17 @@ export default function SchedulePage() {
                   <p className="text-xs opacity-50 pt-0.5 font-mono tabular-nums">{s.time}</p>
                   <div>
                     <div className="flex items-start gap-2 flex-wrap">
-                      <p className={`font-medium text-sm${s.italic ? " italic opacity-60" : ""}`}>{s.title}</p>
+                      {s.titleUrl ? (
+                        <Link
+                          href={s.titleUrl}
+                          style={{ color: "var(--water)" }}
+                          className="font-medium text-sm underline underline-offset-2 hover:opacity-70"
+                        >
+                          {s.title}
+                        </Link>
+                      ) : (
+                        <p className={`font-medium text-sm${s.italic ? " italic opacity-60" : ""}`}>{s.title}</p>
+                      )}
                       {s.type && (
                         <span
                           className="text-xs px-2 py-0.5 rounded-full text-white shrink-0"

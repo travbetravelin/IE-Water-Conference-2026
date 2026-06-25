@@ -21,6 +21,7 @@ type SpeakerCardProps = {
   image?: string;
   imagePosition?: string;
   coPresenter?: CoPresenter;
+  images?: string[];
 };
 
 function Initials({ name }: { name: string }) {
@@ -38,17 +39,29 @@ function Initials({ name }: { name: string }) {
 }
 
 export default function SpeakerCard(props: SpeakerCardProps) {
-  const { id, name, role, bio, talkTitle, talkAbstract, note, image, imagePosition, coPresenter } = props;
-  const [bioOpen, setBioOpen] = useState(false);
+  const { id, name, role, bio, talkTitle, talkAbstract, note, image, imagePosition, coPresenter, images } = props;
+  const [open, setOpen] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
   const hasBio = !!bio;
+  const hasGallery = !!images && images.length > 0;
+  const isClickable = hasBio || hasGallery;
+
+  function handlePrev(e: React.MouseEvent) {
+    e.stopPropagation();
+    setImageIndex((i) => (i - 1 + images!.length) % images!.length);
+  }
+  function handleNext(e: React.MouseEvent) {
+    e.stopPropagation();
+    setImageIndex((i) => (i + 1) % images!.length);
+  }
 
   return (
     <div
       id={id}
-      className={`bg-white rounded-xl p-6 shadow-sm border border-black/5 flex flex-col${hasBio ? " cursor-pointer select-none" : ""}`}
-      onClick={hasBio ? () => setBioOpen((o) => !o) : undefined}
-      role={hasBio ? "button" : undefined}
-      aria-expanded={hasBio ? bioOpen : undefined}
+      className={`bg-white rounded-xl p-6 shadow-sm border border-black/5 flex flex-col${isClickable ? " cursor-pointer select-none" : ""}`}
+      onClick={isClickable ? () => setOpen((o) => !o) : undefined}
+      role={isClickable ? "button" : undefined}
+      aria-expanded={isClickable ? open : undefined}
     >
       {/* Photos */}
       {coPresenter ? (
@@ -106,23 +119,56 @@ export default function SpeakerCard(props: SpeakerCardProps) {
           {note.split("\n").map((line, i) => <p key={i}>{line}</p>)}
         </div>
       )}
-      {!bio && !talkAbstract && (
+      {!bio && !talkAbstract && !hasGallery && (
         <p className="text-sm opacity-40 italic">Bio coming soon.</p>
       )}
 
-      {hasBio && (
+      {isClickable && (
         <>
           <div
-            className={`overflow-hidden transition-all duration-300 ${bioOpen ? "max-h-[3000px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}
+            className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[3000px] opacity-100 mt-3" : "max-h-0 opacity-0"}`}
           >
-            <div className="text-sm opacity-60 leading-relaxed border-t border-black/10 pt-3 space-y-3">
-              {bio!.split("\n\n").map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+            <div className="border-t border-black/10 pt-3 space-y-3">
+              {hasGallery && (
+                <div className="relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={images![imageIndex]}
+                    alt={`${name} photo ${imageIndex + 1}`}
+                    className="w-full rounded-xl object-contain max-h-80"
+                  />
+                  {images!.length > 1 && (
+                    <div className="flex items-center justify-center gap-4 mt-2">
+                      <button
+                        onClick={handlePrev}
+                        className="text-sm px-3 py-1 rounded-full border border-black/20 hover:bg-black/5 transition-colors"
+                      >
+                        ←
+                      </button>
+                      <span className="text-xs opacity-40">{imageIndex + 1} / {images!.length}</span>
+                      <button
+                        onClick={handleNext}
+                        className="text-sm px-3 py-1 rounded-full border border-black/20 hover:bg-black/5 transition-colors"
+                      >
+                        →
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+              {hasBio && (
+                <div className="text-sm opacity-60 leading-relaxed space-y-3">
+                  {bio!.split("\n\n").map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <p className="text-xs mt-3 opacity-40 self-start">
-            {bioOpen ? "Hide bio ↑" : "Read bio ↓"}
+            {open
+              ? hasGallery && !hasBio ? "Hide photos ↑" : "Hide ↑"
+              : hasGallery && !hasBio ? "View photos ↓" : "Read bio ↓"}
           </p>
         </>
       )}
