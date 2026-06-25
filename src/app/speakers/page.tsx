@@ -15,6 +15,7 @@ type Speaker = {
   note?: string;
   image?: string;
   imagePosition?: string;
+  images?: string[];
   coPresenter?: {
     name: string;
     id?: string;
@@ -104,6 +105,14 @@ const speakers: Speaker[] = [
     note: "Keynote · Saturday · 1:30–2:30 pm",
   },
   {
+    name: "Austin Unruh",
+    id: "austin-unruh",
+    role: "Trees for Graziers",
+    talkTitle: "Growing Resilience Through Trees For Food and Fodder",
+    bio: "Austin Unruh is the founder and CEO of Trees for Graziers (TFG), a company helping farmers in Pennsylvania and beyond take their grazing to new heights using silvopasture. His goal is to make silvopasture as easy and cost-effective as possible for farmers, which is why TFG offers everything from planning and funding acquisition to planting and aftercare, while also growing silvo-specific nursery stock and educating the public and conservation professionals about silvopasture.",
+    note: "Presentation · Friday · 2:15–3:00 pm",
+  },
+  {
     name: "Zack Withers",
     id: "zack-withers",
     role: "Polk's Folly",
@@ -111,6 +120,10 @@ const speakers: Speaker[] = [
   },
   {
     name: "Chili Hawes",
+    id: "chili-hawes",
+    talkTitle: "Building Projects through the Geometry of Thought",
+    bio: "Chili Hawes, FRGS, is one of the Founders of October Gallery and Director since its opening in 1979. A native of the Rocky Mountains, she obtained a BA in French Literature from Colorado College, followed by a year at the Sorbonne and post-graduate work in Linguistics at Claremont Graduate School and has taught at all levels of the educational system both in the USA and Australia. A founder and director of Institute of Ecotechnics (www.ecotechnics.edu), she has managed various ecological projects in the high desert of New Mexico, the Outback of Australia and the south of France. She has travelled widely including major research trips for the October Gallery to India, Melanesia, Peru, Southern Africa and Fiji.",
+    image: "/images/chili-hawes.jpg",
   },
 ];
 
@@ -126,7 +139,9 @@ const activities: Speaker[] = [
     name: "MoonShine",
     id: "moonshine",
     role: "Nan Franzblau and Wind Coral",
+    talkTitle: "We Belong to the Land",
     talkAbstract: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
+    images: ["/images/moonshine.jpg", "/images/moonshine-2.jpg", "/images/moonshine-3.jpg"],
   },
   {
     name: "David Sundberg",
@@ -135,7 +150,11 @@ const activities: Speaker[] = [
   },
   {
     name: "Dave Neita",
-    role: "Music & Poetry / Open Mic MC",
+    id: "dave-neita",
+    role: "Music & Poetry",
+    talkTitle: "Poetry Jamming",
+    talkAbstract: "Dave will host an epic poetry jamming session where poets can have the occasion to read a poem they wrote or that they love. Dave will also present his poetry.",
+    bio: "David Neita is a celebrated lawyer, with expertise in human rights and is widely regarded as one of the most engaging and informative social justice practitioners in London. He is also a published spoken word poet who has performed and led poetry workshops for a range of groups. He is dedicated to the mission of advancing empowerment through poetry, politics and public service. Called to the Bar of England & Wales in 2000, David was a member of the legal team, which brought the largest group action claim in the UK on behalf of thousands of South African asbestos miners.",
   },
 ];
 
