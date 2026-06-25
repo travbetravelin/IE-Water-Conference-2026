@@ -82,6 +82,7 @@ const speakers: Speaker[] = [
   {
     name: "Nino Saggio",
     id: "nino-saggio",
+    image: "/images/nino-saggio.jpeg",
     talkTitle:
       "Beyond the Liquid: Architectural Responses to the States and Crises of Water",
     talkAbstract:
@@ -110,6 +111,7 @@ const speakers: Speaker[] = [
     role: "Trees for Graziers",
     talkTitle: "Growing Resilience Through Trees For Food and Fodder",
     bio: "Austin Unruh is the founder and CEO of Trees for Graziers (TFG), a company helping farmers in Pennsylvania and beyond take their grazing to new heights using silvopasture. His goal is to make silvopasture as easy and cost-effective as possible for farmers, which is why TFG offers everything from planning and funding acquisition to planting and aftercare, while also growing silvo-specific nursery stock and educating the public and conservation professionals about silvopasture.",
+    image: "/images/austin-unruh.JPG",
     note: "Presentation · Friday · 2:15–3:00 pm",
   },
   {
@@ -141,7 +143,7 @@ const activities: Speaker[] = [
     role: "Nan Franzblau and Wind Coral",
     talkTitle: "We Belong to the Land",
     talkAbstract: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
-    images: ["/images/moonshine.jpg", "/images/moonshine-2.jpg", "/images/moonshine-3.jpg"],
+    images: ["/images/moonshine.jpeg", "/images/moonshine-2.jpeg", "/images/moonshine-3.jpeg"],
   },
   {
     name: "David Sundberg",
@@ -154,6 +156,7 @@ const activities: Speaker[] = [
     role: "Music & Poetry",
     talkTitle: "Poetry Jamming",
     talkAbstract: "Dave will host an epic poetry jamming session where poets can have the occasion to read a poem they wrote or that they love. Dave will also present his poetry.",
+    image: "/images/dave-neita.JPG",
     bio: "David Neita is a celebrated lawyer, with expertise in human rights and is widely regarded as one of the most engaging and informative social justice practitioners in London. He is also a published spoken word poet who has performed and led poetry workshops for a range of groups. He is dedicated to the mission of advancing empowerment through poetry, politics and public service. Called to the Bar of England & Wales in 2000, David was a member of the legal team, which brought the largest group action claim in the UK on behalf of thousands of South African asbestos miners.",
   },
 ];
