@@ -171,7 +171,7 @@ export default function SpeakersPage() {
         Full bios and session details for all confirmed speakers and presenters.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 md:items-start">
         {speakers.map((s) => (
           <SpeakerCard key={s.name} {...s} />
         ))}
@@ -184,7 +184,7 @@ export default function SpeakersPage() {
         Workshop leaders, performers, and special programming.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-start">
         {activities.map((s) => (
           <SpeakerCard key={s.name} {...s} />
         ))}
