@@ -17,12 +17,16 @@ export function Footer() {
             {[
               ["Schedule", "/schedule"],
               ["Speakers", "/speakers"],
-              ["Registration", "/registration"],
+              ["Registration", "https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026", true],
               ["Getting There", "/getting-there"],
               ["FAQ", "/faq"],
-            ].map(([label, href]) => (
+            ].map(([label, href, external]) => (
               <li key={href}>
-                <a href={href} className="hover:text-white transition-colors">
+                <a
+                  href={href}
+                  className="hover:text-white transition-colors"
+                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
                   {label}
                 </a>
               </li>
