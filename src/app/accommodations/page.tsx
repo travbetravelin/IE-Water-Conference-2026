@@ -43,11 +43,12 @@ export default function AccommodationsPage() {
 
       {/* Off-site */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold mb-4">Off-Site Options</h2>
+        <h2 className="text-xl font-semibold mb-4">Commuting to the event</h2>
         <div className="bg-white rounded-xl border border-black/5 shadow-sm p-6 text-sm">
-          <p className="opacity-60 italic">
-            A list of nearby hotels, motels, and short-term rental options will be provided here
-            as details are finalized. Check back closer to the event.
+          <p className="opacity-70">
+            While camping is included in the registration you may commute to the event if you so
+            desire. There are hotels and various Booking.com or AirBnB rentals within a 30 min
+            drive radius.
           </p>
         </div>
       </section>
