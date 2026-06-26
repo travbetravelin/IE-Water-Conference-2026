@@ -20,23 +20,35 @@ export default function AccommodationsPage() {
           className="rounded-xl p-6 text-sm leading-relaxed"
         >
           <p className="opacity-70 mb-3">
-            Synergia Ranch has limited on-site accommodations including on-site camping.
-            Availability is not guaranteed — please contact the organizing team directly to
-            inquire about on-site stays.
+            We are pleased to share that on-site camping is fully included in your registration!
+            Camping takes place in a beautiful, scenic setting on the ranch, and we highly encourage
+            participants to embrace this option. We may also have glamping options available as
+            details are finalized.
+          </p>
+          <p className="opacity-70 mb-3">
+            For those looking for indoor lodging, we have a very limited number of rooms available
+            which utilize shared common shower facilities. Please note that indoor rooms are not
+            included in the standard registration. If you would like to inquire about renting a
+            room, please write directly to{" "}
+            <a href="mailto:starrlight@ecotechnics.edu" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+              starrlight@ecotechnics.edu
+            </a>.
           </p>
           <p className="opacity-70">
-            Full details on room types, pricing, and booking will be shared as they are confirmed.
+            Full details on room types, pricing, and potential glamping upgrades will be shared as
+            they are confirmed.
           </p>
         </div>
       </section>
 
       {/* Off-site */}
       <section className="mb-10">
-        <h2 className="text-xl font-semibold mb-4">Off-Site Options</h2>
+        <h2 className="text-xl font-semibold mb-4">Commuting to the event</h2>
         <div className="bg-white rounded-xl border border-black/5 shadow-sm p-6 text-sm">
-          <p className="opacity-60 italic">
-            A list of nearby hotels, motels, and short-term rental options will be provided here
-            as details are finalized. Check back closer to the event.
+          <p className="opacity-70">
+            While camping is included in the registration you may commute to the event if you so
+            desire. There are hotels and various Booking.com or AirBnB rentals within a 30 min
+            drive radius.
           </p>
         </div>
       </section>

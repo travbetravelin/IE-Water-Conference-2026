@@ -9,11 +9,11 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/schedule", label: "Schedule" },
   { href: "/speakers", label: "Speakers" },
+  { href: "/activities", label: "Activities" },
   { href: "/registration", label: "Registration" },
   { href: "/accommodations", label: "Accommodations" },
   { href: "/venue", label: "Venue" },
   { href: "/getting-there", label: "Getting There" },
-  { href: "/activities", label: "Activities" },
   { href: "/faq", label: "FAQ" },
 ];
 
