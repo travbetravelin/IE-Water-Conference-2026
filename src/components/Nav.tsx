@@ -10,7 +10,7 @@ const links = [
   { href: "/schedule", label: "Schedule" },
   { href: "/speakers", label: "Speakers" },
   { href: "/activities", label: "Activities" },
-  { href: "/registration", label: "Registration" },
+  { href: "https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026", label: "Registration", external: true },
   { href: "/accommodations", label: "Accommodations" },
   { href: "/venue", label: "Venue" },
   { href: "/getting-there", label: "Getting There" },
@@ -41,18 +41,29 @@ export function Nav() {
 
         {/* Desktop */}
         <ul className="hidden lg:flex items-center gap-1">
-          {links.map(({ href, label }) => (
+          {links.map(({ href, label, external }) => (
             <li key={href}>
-              <Link
-                href={href}
-                className={`px-3 py-1.5 rounded text-sm transition-colors ${
-                  pathname === href
-                    ? "bg-white/20 text-white font-medium"
-                    : "text-white/75 hover:text-white hover:bg-white/10"
-                }`}
-              >
-                {label}
-              </Link>
+              {external ? (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded text-sm transition-colors text-white/75 hover:text-white hover:bg-white/10"
+                >
+                  {label}
+                </a>
+              ) : (
+                <Link
+                  href={href}
+                  className={`px-3 py-1.5 rounded text-sm transition-colors ${
+                    pathname === href
+                      ? "bg-white/20 text-white font-medium"
+                      : "text-white/75 hover:text-white hover:bg-white/10"
+                  }`}
+                >
+                  {label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -82,17 +93,30 @@ export function Nav() {
       {/* Mobile menu */}
       {open && (
         <div style={{ backgroundColor: "var(--water-dark)" }} className="lg:hidden border-t border-white/10 px-4 pb-4">
-          {links.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              onClick={() => setOpen(false)}
-              className={`block py-2 text-sm ${
-                pathname === href ? "text-white font-medium" : "text-white/75"
-              }`}
-            >
-              {label}
-            </Link>
+          {links.map(({ href, label, external }) => (
+            external ? (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="block py-2 text-sm text-white/75"
+              >
+                {label}
+              </a>
+            ) : (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setOpen(false)}
+                className={`block py-2 text-sm ${
+                  pathname === href ? "text-white font-medium" : "text-white/75"
+                }`}
+              >
+                {label}
+              </Link>
+            )
           ))}
           <a
             href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
