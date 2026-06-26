@@ -101,6 +101,7 @@ const speakers: Speaker[] = [
     name: "Amanda Bramble",
     id: "amanda-bramble",
     role: "Ampersand Sustainable Learning Center",
+    image: "/images/amanda-bramble.JPG",
     talkTitle: "We Are The Land and Waters",
     talkAbstract:
       "Restoring the land is not just something done \"out there.\" We are the land and waters. Techniques for living in harmony with the elements of our place are not new. Developing lifestyles that allow us to live appropriately with the changing availability of our resources is totally possible. The future asks us to streamline, and people are responding. Developing islands of coherence and hubs of resilience is essential. Connecting them is how we will thrive. In this presentation Amanda will share about the work of Ampersand Sustainable Learning Center and how mentorship and facilitating connection expands our possibilities, and invite discussion among the participants to promote cross-pollination.",
