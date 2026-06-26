@@ -15,22 +15,25 @@ export function Footer() {
           <p className="font-semibold text-white mb-2">Quick Links</p>
           <ul className="space-y-1 opacity-70">
             {[
-              ["Schedule", "/schedule"],
-              ["Speakers", "/speakers"],
-              ["Registration", "https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026", true],
-              ["Getting There", "/getting-there"],
-              ["FAQ", "/faq"],
-            ].map(([label, href, external]) => (
+              { label: "Schedule", href: "/schedule" },
+              { label: "Speakers", href: "/speakers" },
+              { label: "Getting There", href: "/getting-there" },
+              { label: "FAQ", href: "/faq" },
+            ].map(({ label, href }) => (
               <li key={href}>
-                <a
-                  href={href}
-                  className="hover:text-white transition-colors"
-                  {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                >
-                  {label}
-                </a>
+                <a href={href} className="hover:text-white transition-colors">{label}</a>
               </li>
             ))}
+            <li>
+              <a
+                href="https://crucescreatives.org/event-6623482?CalendarViewType=1&SelectedDate=7/25/2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Registration
+              </a>
+            </li>
           </ul>
         </div>
         <div>
