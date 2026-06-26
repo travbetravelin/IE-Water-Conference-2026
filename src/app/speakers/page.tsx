@@ -113,6 +113,7 @@ const speakers: Speaker[] = [
     id: "austin-unruh",
     role: "Trees for Graziers",
     talkTitle: "Growing Resilience Through Trees For Food and Fodder",
+    talkAbstract: "Integrating trees into the agricultural landscape is having a time of re-emergence. We will look at the work currently being done, compare that to the historic use of trees on the landscape, highlighting the tension of how we can pay for large scale plantings when farmers often have little margin and it takes years for trees to offer much in return. We will close by examining the opportunities and strategies to use trees to create resilient, productive food systems in the southwest.",
     bio: "Austin Unruh is the founder and CEO of Trees for Graziers (TFG), a company helping farmers in Pennsylvania and beyond take their grazing to new heights using silvopasture. His goal is to make silvopasture as easy and cost-effective as possible for farmers, which is why TFG offers everything from planning and funding acquisition to planting and aftercare, while also growing silvo-specific nursery stock and educating the public and conservation professionals about silvopasture.",
     image: "/images/austin-unruh.JPG",
     note: "Presentation · Friday · 2:15–3:00 pm",
