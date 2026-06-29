@@ -28,6 +28,7 @@ type Activity = {
   note?: React.ReactNode;
   id?: string;
   bio?: string;
+  images?: string[];
 };
 
 const activities: Activity[] = [
@@ -105,6 +106,7 @@ const activities: Activity[] = [
       </>
     ),
     bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
+    images: ["/images/kristin-swiat.jpeg"],
   },
   {
     icon: <GeoDome />,
@@ -170,7 +172,7 @@ export default function ActivitiesPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {activities.map((a) =>
-          a.bio ? (
+          a.bio || a.images ? (
             <ActivityBioCard
               key={a.title}
               id={a.id}
@@ -179,6 +181,7 @@ export default function ActivitiesPage() {
               lead={a.lead}
               description={a.description}
               bio={a.bio}
+              images={a.images}
               note={a.note}
             />
           ) : (
