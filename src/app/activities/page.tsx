@@ -130,6 +130,23 @@ const activities: Activity[] = [
       "A guided botanical walk identifying native and cultivated plants in the ranch environment, with a focus on water-adapted species and land relationships.",
   },
   {
+    icon: "🎵",
+    id: "moonshine",
+    title: "Music Concert 'We Belong to the Land'",
+    lead: "MoonShine · Nan Franzblau and Wind Coral",
+    description: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
+    images: ["/images/moonshine.jpeg", "/images/moonshine-2.jpeg", "/images/moonshine-3.jpeg"],
+  },
+  {
+    icon: "🎤",
+    id: "dave-neita",
+    title: "Poetry Jamming",
+    lead: "Dave Neita",
+    description: "Dave will host an epic poetry jamming session where poets can have the occasion to read a poem they wrote or that they love. Dave will also present his poetry.",
+    bio: "David Neita is a celebrated lawyer, with expertise in human rights and is widely regarded as one of the most engaging and informative social justice practitioners in London. He is also a published spoken word poet who has performed and led poetry workshops for a range of groups. He is dedicated to the mission of advancing empowerment through poetry, politics and public service. Called to the Bar of England & Wales in 2000, David was a member of the legal team, which brought the largest group action claim in the UK on behalf of thousands of South African asbestos miners.",
+    images: ["/images/dave-neita.JPG"],
+  },
+  {
     icon: "🗣️",
     id: "breakout-session-presentations",
     title: "Breakout Session Presentations",
