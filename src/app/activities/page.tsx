@@ -140,7 +140,7 @@ const activities: Activity[] = [
   {
     icon: "🎤",
     id: "dave-neita",
-    title: "Poetry Jamming",
+    title: "Poetry Session \"Flow\"",
     lead: "Dave Neita",
     description: "Dave will host an epic poetry jamming session where poets can have the occasion to read a poem they wrote or that they love. Dave will also present his poetry.",
     bio: "David Neita is a celebrated lawyer, with expertise in human rights and is widely regarded as one of the most engaging and informative social justice practitioners in London. He is also a published spoken word poet who has performed and led poetry workshops for a range of groups. He is dedicated to the mission of advancing empowerment through poetry, politics and public service. Called to the Bar of England & Wales in 2000, David was a member of the legal team, which brought the largest group action claim in the UK on behalf of thousands of South African asbestos miners.",

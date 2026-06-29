@@ -63,7 +63,7 @@ const schedule: Day[] = [
       { time: "5:30–6:00 pm", title: "Presentation Preparation for Session Groups", titleUrl: "/activities#breakout-session-presentations" },
       { time: "6:00–7:00 pm", title: "Dinner — Dining Hall", type: "meal" },
       { time: "7:15–7:45 pm", title: "Breakout Groups Share Presentations", note: "8 minutes each", type: "breakout" },
-      { time: "7:45–8:45 pm", title: "Poetry Jamming", speaker: "Dave Neita", speakerUrl: "/activities#dave-neita", type: "social" },
+      { time: "7:45–8:45 pm", title: "Poetry Session \"Flow\"", speaker: "Dave Neita", speakerUrl: "/activities#dave-neita", type: "social" },
       { time: "8:45–10:00 pm", title: "Music and Dance at Dome", type: "social" },
     ],
   },
