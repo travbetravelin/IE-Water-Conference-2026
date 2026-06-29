@@ -110,7 +110,7 @@ const schedule: Day[] = [
     sessions: [
       { time: "8:00–8:45 am", title: "Breakfast", type: "meal" },
       { time: "9:15–10:15 am", title: "Presentation" },
-      { time: "10:15–11:00 am", title: "Structures of Managerial Thought", speaker: "Chili Hawes", speakerUrl: "/speakers#chili-hawes", type: "keynote" },
+      { time: "10:15–11:00 am", title: "Step by lucky Step", speaker: "Chili Hawes", speakerUrl: "/speakers#chili-hawes", type: "keynote" },
       { time: "11:00–11:15 am", title: "15 Min Break", italic: true },
       { time: "11:15 am–12:15 pm", title: "Restoring Eden: A Demonstration Project Challenging the \"Waste Water\" Paradigm and Celebrating Sustainable Cultures", speakers: [{ name: "Dr. Mark Nelson", url: "/speakers#mark-nelson" }, { name: "Meridel Rubenstein", url: "/speakers#meridel-rubenstein" }], type: "keynote" },
       { time: "12:15–1:15 pm", title: "Lunch", type: "meal" },
