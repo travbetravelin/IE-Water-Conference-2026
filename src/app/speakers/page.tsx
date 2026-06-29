@@ -22,6 +22,7 @@ type Speaker = {
     role?: string;
     image?: string;
     imagePosition?: string;
+    bio?: string;
   };
 };
 
