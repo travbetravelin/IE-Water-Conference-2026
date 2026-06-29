@@ -62,15 +62,19 @@ const activities: Activity[] = [
     lead: "James Skeet, Spirit Farm · David Sundberg, Santa Fe Farmers Market Institute",
     description: (
       <>
-        In these two two-hour sessions,{" "}
+        In these two two-hour sessions — led by{" "}
+        <Link href="/speakers#james-skeet" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
+          James Skeet
+        </Link>{" "}
+        on{" "}
         <Link href="/schedule#friday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
           Friday
         </Link>{" "}
-        and{" "}
+        and David Sundberg (Santa Fe Farmers Market Institute) on{" "}
         <Link href="/schedule#saturday" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
           Saturday
         </Link>{" "}
-        respectively, participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
+        — participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
       </>
     ),
   },
