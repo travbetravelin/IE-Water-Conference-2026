@@ -40,10 +40,11 @@ export function Footer() {
           <p className="font-semibold text-white mb-2">Sponsors</p>
           <ul className="space-y-1 opacity-70">
             {[
+              "Santa Fe Pojoaque Soil and Water Conservation District",
               "Cruces Creatives",
               "New Mexico Healthy Soil Working Group",
               "Institute of Ecotechnics",
-              "Santa Fe Pojoaque Soil and Water Conservation District",
+              "Spirit Farm",
               "Synergia Ranch",
               "Anonymous donors",
             ].map((name) => (
