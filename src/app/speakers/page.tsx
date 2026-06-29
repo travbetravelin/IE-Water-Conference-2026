@@ -69,6 +69,8 @@ const speakers: Speaker[] = [
       name: "Meridel Rubenstein",
       id: "meridel-rubenstein",
       role: "Artist · Project Director, Eden in Iraq Wastewater Garden project",
+      image: "/images/meridel-rubenstein.JPG",
+      bio: "Project Director, Meridel Rubenstein conceptualized and initiated The Eden in Iraq Wastewater Project in the Mesopotamian Marshes of S. Iraq. With Dr. Mark Nelson, our international team is using environmental engineering and design, and wastewater to make a restorative garden for health, cultural heritage, and environmental education. Eden in Iraq received its first substantial research funding in 2013 from Nanyang Technological University in Singapore where she was a Professor of Art and Ecology. The Institute of Ecotechnics is our non-profit.\n\nMeridel is an internationally recognized artist/photographer. Her artwork has been featured in exhibitions and publications worldwide, and has received numerous grants including a Guggenheim Fellowship. Her artwork explores intersections of nature and culture in relation to ecological and social imbalances. In 2024, Rubenstein received the Anonymous was a Woman Environmental Grant to make ceramic relief tile panels for the Eden in Iraq Wastewater Garden main entrance.\n\nMeridel will join team member Dr. Mark Nelson to speak about the evolution of the project.",
     },
   },
   {
@@ -133,13 +135,6 @@ const speakers: Speaker[] = [
   },
 ];
 
-const activities: Speaker[] = [
-  {
-    name: "David Sundberg",
-    id: "david-sundberg",
-    role: "Santa Fe Farmers Market Institute",
-  },
-];
 
 export default function SpeakersPage() {
   return (
@@ -157,18 +152,6 @@ export default function SpeakersPage() {
         ))}
       </div>
 
-      <h2 style={{ color: "var(--water-dark)" }} className="text-2xl font-bold mb-2">
-        Events &amp; Activities
-      </h2>
-      <p className="opacity-60 mb-8">
-        Workshop leaders, performers, and special programming.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-start">
-        {activities.map((s) => (
-          <SpeakerCard key={s.name} {...s} />
-        ))}
-      </div>
     </div>
   );
 }

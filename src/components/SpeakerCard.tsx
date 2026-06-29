@@ -8,6 +8,7 @@ type CoPresenter = {
   role?: string;
   image?: string;
   imagePosition?: string;
+  bio?: string;
 };
 
 type SpeakerCardProps = {
@@ -43,8 +44,9 @@ export default function SpeakerCard(props: SpeakerCardProps) {
   const [open, setOpen] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const hasBio = !!bio;
+  const hasCoBio = !!coPresenter?.bio;
   const hasGallery = !!images && images.length > 0;
-  const isClickable = hasBio || hasGallery;
+  const isClickable = hasBio || hasCoBio || hasGallery;
 
   function handlePrev(e: React.MouseEvent) {
     e.stopPropagation();
@@ -163,12 +165,20 @@ export default function SpeakerCard(props: SpeakerCardProps) {
                   ))}
                 </div>
               )}
+              {hasCoBio && (
+                <div className="text-sm opacity-60 leading-relaxed space-y-3 pt-3 border-t border-black/10">
+                  <p className="text-xs font-semibold opacity-80 uppercase tracking-wide">{coPresenter!.name}</p>
+                  {coPresenter!.bio!.split("\n\n").map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <p className="text-xs mt-3 opacity-40 self-start">
             {open
-              ? hasGallery && !hasBio ? "Hide photos ↑" : "Hide ↑"
-              : hasGallery && !hasBio ? "View photos ↓" : "Read bio ↓"}
+              ? hasGallery && !hasBio && !hasCoBio ? "Hide photos ↑" : "Hide ↑"
+              : hasGallery && !hasBio && !hasCoBio ? "View photos ↓" : "Read bio ↓"}
           </p>
         </>
       )}
