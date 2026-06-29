@@ -129,7 +129,8 @@ const speakers: Speaker[] = [
   {
     name: "Chili Hawes",
     id: "chili-hawes",
-    talkTitle: "Building Projects through the Geometry of Thought",
+    talkTitle: "Step by lucky Step",
+    talkAbstract: "How do you build a cultural vanguard that survives and thrives for half a century? You don't just build it with bricks and mortar; you build it with structured thought. In this talk, Chili Hawes—longtime collaborator of the visionary John Allen, presents useful tools that formed the intellectual framework that birthed the October Gallery, Synergia Ranch, and global projects around the planet.\n\nMoving from abstract philosophy to practical application, she reveals how using these geometric thought-structures forwardly organised October Gallery's mission, the creation of the Transvangarde.",
     bio: "Chili Hawes, FRGS, is one of the Founders of October Gallery and Director since its opening in 1979. A native of the Rocky Mountains, she obtained a BA in French Literature from Colorado College, followed by a year at the Sorbonne and post-graduate work in Linguistics at Claremont Graduate School and has taught at all levels of the educational system both in the USA and Australia. A founder and director of Institute of Ecotechnics (www.ecotechnics.edu), she has managed various ecological projects in the high desert of New Mexico, the Outback of Australia and the south of France. She has travelled widely including major research trips for the October Gallery to India, Melanesia, Peru, Southern Africa and Fiji.",
     image: "/images/chili-hawes.jpg",
   },
