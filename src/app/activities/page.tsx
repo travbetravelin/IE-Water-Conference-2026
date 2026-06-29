@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ActivityBioCard from "@/components/ActivityBioCard";
 
 export const metadata: Metadata = {
   title: "Activities — Synergia 2026",
@@ -26,6 +27,7 @@ type Activity = {
   description: React.ReactNode;
   note?: React.ReactNode;
   id?: string;
+  bio?: string;
 };
 
 const activities: Activity[] = [
@@ -96,13 +98,13 @@ const activities: Activity[] = [
     lead: "Kristin Swiat · Stonegate Farm, Balmville, NY",
     description: (
       <>
-        Embodied movement sessions with{" "}
-        <Link href="/speakers#kristin-swiat" style={{ color: "var(--water)" }} className="underline underline-offset-2 hover:opacity-70">
-          Kristin Swiat
-        </Link>{" "}
-        exploring the relationship between body, land, and water. Open to all experience levels.
+        <p>Using earth-based metaphor and imagery as a source of our movement explorations can help us to inhabit our bodies more fully and move more freely. We will use our time together to move, to rest, to get out of our heads and into our bodies but also to integrate what we have learned and experienced at the conference using a variety of methods including somatic movement, embodied journaling and Authentic Movement.</p>
+        <p>Somatic movement is an approach of listening to your body&apos;s sensations and cues, needs and desires, moving from the inside out based on feeling rather than aesthetic consideration.</p>
+        <p>We will begin with a gentle warm up and movement meditation, moving into an Authentic Movement practice. This practice is done in pairs, involving movement with eyes closed while being observed by a neutral witness before alternating roles. Discussion afterwards around your experience as both the mover and the witness concludes a profound practice of being with yourself while also holding space for others.</p>
+        <p>These sessions are open to all bodies.</p>
       </>
     ),
+    bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
   },
   {
     icon: <GeoDome />,
@@ -167,21 +169,34 @@ export default function ActivitiesPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {activities.map((a) => (
-          <div
-            key={a.title}
-            id={a.id}
-            className="bg-white rounded-xl p-6 border border-black/5 shadow-sm"
-          >
-            <div className="text-3xl mb-3">{a.icon}</div>
-            <h2 className="text-base font-semibold mb-1">{a.title}</h2>
-            <p className="text-xs opacity-50 mb-3">{a.lead}</p>
-            <p className="text-sm opacity-70 leading-relaxed">{a.description}</p>
-            {a.note && (
-              <p className="text-xs opacity-50 mt-2 font-mono">{a.note}</p>
-            )}
-          </div>
-        ))}
+        {activities.map((a) =>
+          a.bio ? (
+            <ActivityBioCard
+              key={a.title}
+              id={a.id}
+              icon={a.icon}
+              title={a.title}
+              lead={a.lead}
+              description={a.description}
+              bio={a.bio}
+              note={a.note}
+            />
+          ) : (
+            <div
+              key={a.title}
+              id={a.id}
+              className="bg-white rounded-xl p-6 border border-black/5 shadow-sm"
+            >
+              <div className="text-3xl mb-3">{a.icon}</div>
+              <h2 className="text-base font-semibold mb-1">{a.title}</h2>
+              <p className="text-xs opacity-50 mb-3">{a.lead}</p>
+              <p className="text-sm opacity-70 leading-relaxed">{a.description}</p>
+              {a.note && (
+                <p className="text-xs opacity-50 mt-2 font-mono">{a.note}</p>
+              )}
+            </div>
+          )
+        )}
       </div>
     </div>
   );

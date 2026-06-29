@@ -164,6 +164,7 @@ const typeLabels: Record<string, string> = {
 const leaderLinks: Record<string, string> = {
   "Joyce Skeet": "/speakers#joyce-skeet",
   "Jan-Willem Jansens": "/speakers#jan-willem-jansens",
+  "Kristin Swiat": "/activities#movement",
 };
 
 export default function SchedulePage() {
