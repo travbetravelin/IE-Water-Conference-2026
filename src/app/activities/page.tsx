@@ -77,6 +77,13 @@ const activities: Activity[] = [
         — participants will learn how to make Biochar at a small farm scale. Various barrels for burning will be used, and the principles behind why Biochar is useful for composting and regenerating soils will be uncovered.
       </>
     ),
+    note: (
+      <>
+        <span>James Skeet, Spirit Farm · Friday · 3:00–5:00 pm</span>
+        <br />
+        <span>David Sundberg · Saturday · 3:00–5:00 pm</span>
+      </>
+    ),
   },
   {
     icon: "🌸",
@@ -95,6 +102,7 @@ const activities: Activity[] = [
         takes us on a two-hour practical session making Herbal Preparations with native herbs.
       </>
     ),
+    note: "Joyce Skeet, Spirit Farm · Sunday · 3:00–5:00 pm",
   },
   {
     icon: "💃",
@@ -111,6 +119,7 @@ const activities: Activity[] = [
     ),
     bio: "Kristin Swiat, originally from the Shawangunk Mountains area of New York State, is a performer, bodyworker, textile artist, and farmer based in Brooklyn. She has performed in works across Europe and New York since graduating with a BFA in dance from Juilliard in 2003, and has maintained a trauma-informed, massage-based bodywork practice since graduating from the Swedish Institute in 2010, incorporating Somatic Experiencing, Craniosacral Therapy, Focusing, and other embodied practices. Deeply influenced by a season spent in 2020 living and working on the farm at Synergia Ranch, she is currently the farm manager at Stonegate Farm in Balmville, NY. Her primary interest is exploring the spaces where art and healing connect.",
     images: ["/images/kristin-swiat.jpeg"],
+    note: "Friday, Saturday & Sunday · 3:00–5:00 pm",
   },
   {
     icon: <GeoDome />,
@@ -118,6 +127,7 @@ const activities: Activity[] = [
     lead: "Synergia Ranch Hosts",
     description:
       "A guided tour of the ranch's history, architecture, and decades of ecological and community experimentation. Learn about the unique story of Synergia Ranch and its place in regenerative land stewardship.",
+    note: "Thursday · 4:30–5:15 pm",
   },
   {
     icon: "🌾",
@@ -125,6 +135,7 @@ const activities: Activity[] = [
     lead: "Ranch Guides",
     description:
       "Explore the living landscape of Synergia Ranch — walking the arroyos that channel seasonal water through the land, and through the working orchard that represents years of arid-land food cultivation.",
+    note: "Friday · 9:15–9:45 am",
   },
   {
     icon: "🌱",
@@ -132,6 +143,7 @@ const activities: Activity[] = [
     lead: "Mike Halverson",
     description:
       "A guided botanical walk identifying native and cultivated plants in the ranch environment, with a focus on water-adapted species and land relationships.",
+    note: "Mike Halverson · Friday · 1:30–2:15 pm",
   },
   {
     icon: "🎵",
@@ -140,6 +152,7 @@ const activities: Activity[] = [
     lead: "MoonShine · Nan Franzblau and Wind Coral",
     description: "MoonShine distills the essence of folk, the luster of harmony, and a deep love for the beauties of our life-sustaining Earth into luminous, heartfelt song. Nan Franzblau and Wind Coral have been sharing their original anthems with audiences in their hometown of Silver City, New Mexico for nine years, performing regularly at community events, the Silver City Farmers Market, cafes, restaurants, celebrations, and on community radio. Audiences attest to the magic woven by MoonShine, describing the duo's arrangements as a reverie of \"stunning harmonies and imagery,\" and \"the takeaway…..an expanded, happy and peaceful heart.\"",
     images: ["/images/moonshine.jpeg", "/images/moonshine-2.jpeg", "/images/moonshine-3.jpeg"],
+    note: "Saturday · 8:00–9:30 pm",
   },
   {
     icon: "🎤",
@@ -149,6 +162,7 @@ const activities: Activity[] = [
     description: "Dave will host an epic poetry jamming session where poets can have the occasion to read a poem they wrote or that they love. Dave will also present his poetry.",
     bio: "David Neita is a celebrated lawyer, with expertise in human rights and is widely regarded as one of the most engaging and informative social justice practitioners in London. He is also a published spoken word poet who has performed and led poetry workshops for a range of groups. He is dedicated to the mission of advancing empowerment through poetry, politics and public service. Called to the Bar of England & Wales in 2000, David was a member of the legal team, which brought the largest group action claim in the UK on behalf of thousands of South African asbestos miners.",
     images: ["/images/dave-neita.JPG"],
+    note: "Friday · 7:45–8:45 pm",
   },
   {
     icon: "🗣️",
@@ -191,7 +205,7 @@ export default function ActivitiesPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-start">
         {activities.map((a) =>
           a.bio || a.images ? (
             <ActivityBioCard
