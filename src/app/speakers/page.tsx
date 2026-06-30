@@ -27,6 +27,7 @@ type Speaker = {
 };
 
 const speakers: Speaker[] = [
+  // Friday
   {
     name: "Jan-Willem Jansens",
     id: "jan-willem-jansens",
@@ -50,6 +51,24 @@ const speakers: Speaker[] = [
     note: "Keynote · Friday · 11:15 am–12:15 pm\nHerbal Preparations · Sunday · 3:00–5:00 pm",
   },
   {
+    name: "Mike Halverson",
+    id: "mike-halverson",
+    role: "Santa Ana Native Plants, Pueblo of Santa Ana",
+    talkTitle: "Botanical Walk",
+    bio: "Mike Halverson is the Nursery Manager at Santa Ana Native Plants, located on the Pueblo of Santa Ana. With decades of experience in the high-desert Southwest, he specializes in growing plants for restoration, pollinator habitat and cultural importance.\n\nUnder his leadership, the nursery produces over 250 native species used in restoration projects across the region, including Tribal natural resource programs.\n\nMike is also a passionate educator, sharing knowledge on native plants, water conservation, and climate-resilient landscapes. His work reflects a deep understanding of Southwest ecosystems and a commitment to restoring them.",
+    note: "Botanical Walk · Friday · 1:30–2:15 pm",
+  },
+  {
+    name: "Austin Unruh",
+    id: "austin-unruh",
+    role: "Trees for Graziers",
+    talkTitle: "Growing Resilience Through Trees For Food and Fodder",
+    talkAbstract: "Integrating trees into the agricultural landscape is having a time of re-emergence. We will look at the work currently being done, compare that to the historic use of trees on the landscape, highlighting the tension of how we can pay for large scale plantings when farmers often have little margin and it takes years for trees to offer much in return. We will close by examining the opportunities and strategies to use trees to create resilient, productive food systems in the southwest.",
+    bio: "Austin Unruh is the founder and CEO of Trees for Graziers (TFG), a company helping farmers in Pennsylvania and beyond take their grazing to new heights using silvopasture. His goal is to make silvopasture as easy and cost-effective as possible for farmers, which is why TFG offers everything from planning and funding acquisition to planting and aftercare, while also growing silvo-specific nursery stock and educating the public and conservation professionals about silvopasture.",
+    image: "/images/austin-unruh.JPG",
+    note: "Presentation · Friday · 2:15–3:00 pm",
+  },
+  {
     name: "James Skeet",
     id: "james-skeet",
     role: "Spirit Farm",
@@ -58,6 +77,39 @@ const speakers: Speaker[] = [
     talkAbstract: "Changing our paradigms to become more indigenous by weaving insights from 40,000 years of ancestral knowledge that connects the heart and soul to the earth that escorts us into a new awareness of agriculture. Examine Indigenous farming and biochar perspectives that regenerate the land and food systems so that soil health, environmental health and human health can prosper.",
     bio: "James Skeet is the co-founder of Covenant Pathways and Spirit Farm, a 501(c)(3) nonprofit organization. He is passionate about connecting the heart and soul of all peoples to the land through Indigenous Regenerative Intelligence that integrates the ancient wisdom of Native cosmology to create a haven where soil health, nutrient rich foods, human health, and free markets can prosper for another 10,000 years. His heritage has assisted in grounding him in the work he does as a full-blooded Navajo Native American from Vanderwagen, New Mexico where he and his wife, Joyce, have an experiential farm that uses only natural practices including microbiological composting to heal the high desert southwestern soil — a living example of how we can recover and reclaim traditional farming and spiritual practices to transform our way of life and health, reducing the dependency on the very food system that is harming us.",
     note: "Keynote · Saturday · 10:00–11:00 am\nBiochar in Practice · Friday · 3:00–5:00 pm",
+  },
+  // Saturday
+  {
+    name: "Indra Shekhar Singh",
+    id: "indra-shekhar-singh",
+    talkTitle: "Indigenous Decentralised Water Management and River Revival",
+    talkAbstract:
+      "This talk will about ways to survive using indigenous water wisdom and community science to revive rivers and construct water structures. During the talk we shall go over the principles which are universal and the talk will also tell the story of how communities using low tech nature based methods have gained water sovereignty and dignity.",
+    bio: "Indra is an independent writer and agricultural policy analyst with extensive experience in agroecology, seed sovereignty, water conservation, and agrarian politics. He previously served as Director of Policy and Outreach at the National Seed Association of India and currently hosts India's only bilingual agri-talk show, Krishi Ki Baat / Farm Talks, on The Wire.\n\nOver the years, Indra has travelled through hundreds of villages across India, working closely with farmers on regenerative agriculture, indigenous seed conservation, sustainable farming practices, and community-led ecological restoration. He has delivered more than 200 lectures worldwide on agroecology, environmental issues, water conservation, and agrarian politics, including invited talks at the International Labour Organization (ILO), leading Indian and American universities, and international farmers' and seed forums such as the Rocky Mountain Seed Festival.\n\nFor the past five years, Indra has also been working closely with Rajendra Singh, widely known as the \"Waterman of India,\" to study and promote traditional water rejuvenation systems across India. Through this work, he has trained hundreds of people from around the world in indigenous water conservation techniques and has participated in the revival and construction of ponds and decentralized water systems in different regions globally. He is also the international coordinator and outreach director for Jal Biradari, India.\n\nRecently, he was invited by the President of Colombia as an international expert to advise on water policy and peace reconciliation efforts in the country. He has also worked with various state governments and central government institutions in India on drafting and advising policies related to water conservation, agriculture, and ecological restoration. At present, he is actively involved in efforts to revive three rivers in Rajasthan and two rivers in Chhattisgarh, India.\n\nIn 2022, Indra was invited to deliver a lecture series across several universities in the United States, including American University, Washington DC, and George Mason University. He is currently associated with American University, DC, as a guest research mentor, guiding undergraduate and graduate students on issues related to agriculture, sustainability, ecology, and public policy.\n\nIndra has authored over 500 articles on agriculture, environment, water, and politics for prominent national and international media platforms. He is also frequently invited to participate in television and digital news debates on agrarian, environmental, and policy issues.\n\nIn his early twenties, Indra was mentored by Dr. Vandana Shiva and worked with Navdanya as Campaign Manager and Media Spokesperson. He continues to actively engage in seed conservation and is an avid urban food gardener.",
+    image: "/images/indra-shekhar-singh.jpg",
+    imagePosition: "top",
+    note: "Keynote · Saturday · 11:00 am–12:00 pm",
+  },
+  {
+    name: "Amanda Bramble",
+    id: "amanda-bramble",
+    role: "Ampersand Sustainable Learning Center",
+    image: "/images/amanda-bramble.JPG",
+    talkTitle: "We Are The Land and Waters",
+    talkAbstract:
+      "Restoring the land is not just something done \"out there.\" We are the land and waters. Techniques for living in harmony with the elements of our place are not new. Developing lifestyles that allow us to live appropriately with the changing availability of our resources is totally possible. The future asks us to streamline, and people are responding. Developing islands of coherence and hubs of resilience is essential. Connecting them is how we will thrive. In this presentation Amanda will share about the work of Ampersand Sustainable Learning Center and how mentorship and facilitating connection expands our possibilities, and invite discussion among the participants to promote cross-pollination.",
+    bio: "Amanda Bramble is the director and systems designer at Ampersand Sustainable Learning Center in Cerrillos, NM. She teaches about permaculture, greenhouse design, natural building, passive solar, watershed restoration, and water conscious systems. She designed and crafted Ampersand's infrastructure to cultivate respectful and conscious relationships with the natural elements that support life. She guides apprentices and interns at Ampersand and teaches at local colleges and educational organizations. Amanda's Earthstar mentorship program focuses on not only teaching skills but weaving the community support structures essential to creating a vibrant future.",
+    note: "Keynote · Saturday · 1:30–2:30 pm",
+  },
+  // Sunday
+  {
+    name: "Chili Hawes",
+    id: "chili-hawes",
+    talkTitle: "Step by lucky Step",
+    talkAbstract: "How do you build a cultural vanguard that survives and thrives for half a century? You don't just build it with bricks and mortar; you build it with structured thought. In this talk, Chili Hawes—longtime collaborator of the visionary John Allen, presents useful tools that formed the intellectual framework that birthed the October Gallery, Synergia Ranch, and global projects around the planet.\n\nMoving from abstract philosophy to practical application, she reveals how using these geometric thought-structures forwardly organised October Gallery's mission, the creation of the Transvangarde.",
+    bio: "Chili Hawes, FRGS, is one of the Founders of October Gallery and Director since its opening in 1979. A native of the Rocky Mountains, she obtained a BA in French Literature from Colorado College, followed by a year at the Sorbonne and post-graduate work in Linguistics at Claremont Graduate School and has taught at all levels of the educational system both in the USA and Australia. A founder and director of Institute of Ecotechnics (www.ecotechnics.edu), she has managed various ecological projects in the high desert of New Mexico, the Outback of Australia and the south of France. She has travelled widely including major research trips for the October Gallery to India, Melanesia, Peru, Southern Africa and Fiji.",
+    image: "/images/chili-hawes.jpg",
+    note: "Keynote · Sunday · 10:15–11:00 am",
   },
   {
     name: "Dr. Mark Nelson",
@@ -78,17 +130,6 @@ const speakers: Speaker[] = [
     },
   },
   {
-    name: "Indra Shekhar Singh",
-    id: "indra-shekhar-singh",
-    talkTitle: "Indigenous Decentralised Water Management and River Revival",
-    talkAbstract:
-      "This talk will about ways to survive using indigenous water wisdom and community science to revive rivers and construct water structures. During the talk we shall go over the principles which are universal and the talk will also tell the story of how communities using low tech nature based methods have gained water sovereignty and dignity.",
-    bio: "Indra is an independent writer and agricultural policy analyst with extensive experience in agroecology, seed sovereignty, water conservation, and agrarian politics. He previously served as Director of Policy and Outreach at the National Seed Association of India and currently hosts India's only bilingual agri-talk show, Krishi Ki Baat / Farm Talks, on The Wire.\n\nOver the years, Indra has travelled through hundreds of villages across India, working closely with farmers on regenerative agriculture, indigenous seed conservation, sustainable farming practices, and community-led ecological restoration. He has delivered more than 200 lectures worldwide on agroecology, environmental issues, water conservation, and agrarian politics, including invited talks at the International Labour Organization (ILO), leading Indian and American universities, and international farmers' and seed forums such as the Rocky Mountain Seed Festival.\n\nFor the past five years, Indra has also been working closely with Rajendra Singh, widely known as the \"Waterman of India,\" to study and promote traditional water rejuvenation systems across India. Through this work, he has trained hundreds of people from around the world in indigenous water conservation techniques and has participated in the revival and construction of ponds and decentralized water systems in different regions globally. He is also the international coordinator and outreach director for Jal Biradari, India.\n\nRecently, he was invited by the President of Colombia as an international expert to advise on water policy and peace reconciliation efforts in the country. He has also worked with various state governments and central government institutions in India on drafting and advising policies related to water conservation, agriculture, and ecological restoration. At present, he is actively involved in efforts to revive three rivers in Rajasthan and two rivers in Chhattisgarh, India.\n\nIn 2022, Indra was invited to deliver a lecture series across several universities in the United States, including American University, Washington DC, and George Mason University. He is currently associated with American University, DC, as a guest research mentor, guiding undergraduate and graduate students on issues related to agriculture, sustainability, ecology, and public policy.\n\nIndra has authored over 500 articles on agriculture, environment, water, and politics for prominent national and international media platforms. He is also frequently invited to participate in television and digital news debates on agrarian, environmental, and policy issues.\n\nIn his early twenties, Indra was mentored by Dr. Vandana Shiva and worked with Navdanya as Campaign Manager and Media Spokesperson. He continues to actively engage in seed conservation and is an avid urban food gardener.",
-    image: "/images/indra-shekhar-singh.jpg",
-    imagePosition: "top",
-    note: "Keynote · Saturday · 11:00 am–12:00 pm",
-  },
-  {
     name: "Nino Saggio",
     id: "nino-saggio",
     image: "/images/nino-saggio.jpeg",
@@ -99,49 +140,11 @@ const speakers: Speaker[] = [
     note: "Keynote · Sunday · 1:30–2:15 pm",
   },
   {
-    name: "Mike Halverson",
-    id: "mike-halverson",
-    role: "Santa Ana Native Plants, Pueblo of Santa Ana",
-    talkTitle: "Botanical Walk",
-    bio: "Mike Halverson is the Nursery Manager at Santa Ana Native Plants, located on the Pueblo of Santa Ana. With decades of experience in the high-desert Southwest, he specializes in growing plants for restoration, pollinator habitat and cultural importance.\n\nUnder his leadership, the nursery produces over 250 native species used in restoration projects across the region, including Tribal natural resource programs.\n\nMike is also a passionate educator, sharing knowledge on native plants, water conservation, and climate-resilient landscapes. His work reflects a deep understanding of Southwest ecosystems and a commitment to restoring them.",
-    note: "Botanical Walk · Friday · 1:30–2:15 pm",
-  },
-  {
-    name: "Amanda Bramble",
-    id: "amanda-bramble",
-    role: "Ampersand Sustainable Learning Center",
-    image: "/images/amanda-bramble.JPG",
-    talkTitle: "We Are The Land and Waters",
-    talkAbstract:
-      "Restoring the land is not just something done \"out there.\" We are the land and waters. Techniques for living in harmony with the elements of our place are not new. Developing lifestyles that allow us to live appropriately with the changing availability of our resources is totally possible. The future asks us to streamline, and people are responding. Developing islands of coherence and hubs of resilience is essential. Connecting them is how we will thrive. In this presentation Amanda will share about the work of Ampersand Sustainable Learning Center and how mentorship and facilitating connection expands our possibilities, and invite discussion among the participants to promote cross-pollination.",
-    bio: "Amanda Bramble is the director and systems designer at Ampersand Sustainable Learning Center in Cerrillos, NM. She teaches about permaculture, greenhouse design, natural building, passive solar, watershed restoration, and water conscious systems. She designed and crafted Ampersand's infrastructure to cultivate respectful and conscious relationships with the natural elements that support life. She guides apprentices and interns at Ampersand and teaches at local colleges and educational organizations. Amanda's Earthstar mentorship program focuses on not only teaching skills but weaving the community support structures essential to creating a vibrant future.",
-    note: "Keynote · Saturday · 1:30–2:30 pm",
-  },
-  {
-    name: "Austin Unruh",
-    id: "austin-unruh",
-    role: "Trees for Graziers",
-    talkTitle: "Growing Resilience Through Trees For Food and Fodder",
-    talkAbstract: "Integrating trees into the agricultural landscape is having a time of re-emergence. We will look at the work currently being done, compare that to the historic use of trees on the landscape, highlighting the tension of how we can pay for large scale plantings when farmers often have little margin and it takes years for trees to offer much in return. We will close by examining the opportunities and strategies to use trees to create resilient, productive food systems in the southwest.",
-    bio: "Austin Unruh is the founder and CEO of Trees for Graziers (TFG), a company helping farmers in Pennsylvania and beyond take their grazing to new heights using silvopasture. His goal is to make silvopasture as easy and cost-effective as possible for farmers, which is why TFG offers everything from planning and funding acquisition to planting and aftercare, while also growing silvo-specific nursery stock and educating the public and conservation professionals about silvopasture.",
-    image: "/images/austin-unruh.JPG",
-    note: "Presentation · Friday · 2:15–3:00 pm",
-  },
-  {
     name: "Zack Withers",
     id: "zack-withers",
     role: "Polk's Folly",
     talkTitle: "Water is Life: Pushing Back Against the Commodification of Water in New Mexico and Building Community Capacity of Stewarding Water Resources in Increasingly Arid Environments",
     note: "Presentation · Sunday · 2:15–3:00 pm",
-  },
-  {
-    name: "Chili Hawes",
-    id: "chili-hawes",
-    talkTitle: "Step by lucky Step",
-    talkAbstract: "How do you build a cultural vanguard that survives and thrives for half a century? You don't just build it with bricks and mortar; you build it with structured thought. In this talk, Chili Hawes—longtime collaborator of the visionary John Allen, presents useful tools that formed the intellectual framework that birthed the October Gallery, Synergia Ranch, and global projects around the planet.\n\nMoving from abstract philosophy to practical application, she reveals how using these geometric thought-structures forwardly organised October Gallery's mission, the creation of the Transvangarde.",
-    bio: "Chili Hawes, FRGS, is one of the Founders of October Gallery and Director since its opening in 1979. A native of the Rocky Mountains, she obtained a BA in French Literature from Colorado College, followed by a year at the Sorbonne and post-graduate work in Linguistics at Claremont Graduate School and has taught at all levels of the educational system both in the USA and Australia. A founder and director of Institute of Ecotechnics (www.ecotechnics.edu), she has managed various ecological projects in the high desert of New Mexico, the Outback of Australia and the south of France. She has travelled widely including major research trips for the October Gallery to India, Melanesia, Peru, Southern Africa and Fiji.",
-    image: "/images/chili-hawes.jpg",
-    note: "Keynote · Sunday · 10:15–11:00 am",
   },
 ];
 
